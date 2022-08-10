@@ -1,237 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown 基础教程</title>
-    <url>/post/8513d0f8.html</url>
-    <content><![CDATA[<h2 id="1-什么是Markdown"><a href="#1-什么是Markdown" class="headerlink" title="1.什么是Markdown"></a>1.什么是Markdown</h2><blockquote>
-<p><code>Markdown</code>是一种轻量标记语言,通过简单的语法，使普通文本具有一定的格式。文件后缀名一般为<code>.md</code></p>
-</blockquote>
-<blockquote>
-<p><strong>注意</strong>：用到的符号必须在英文状态下输入才会生效</p>
-</blockquote>
-<h1 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h1><hr>
-<h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><p>有两种写法：</p>
-<h3 id="方法一：在文字下方输入-或-构成的线"><a href="#方法一：在文字下方输入-或-构成的线" class="headerlink" title="方法一：在文字下方输入-或=构成的线:"></a>方法一：在文字下方输入<code>-</code>或<code>=</code>构成的线:</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important">我展示的是一级标题
-<span class="token punctuation">=================</span></span>
-
-<span class="token title important">我展示的是二级标题
-<span class="token punctuation">-----------------</span></span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/62fb3293b1633c3ed4a3783127f9d02d.jpeg" alt="方法一"></p>
-<h3 id="方法二：在文字前面插入-号，内容前面要有空格与-隔开："><a href="#方法二：在文字前面插入-号，内容前面要有空格与-隔开：" class="headerlink" title="方法二：在文字前面插入#号，内容前面要有空格与#隔开："></a>方法二：在文字前面插入<code>#</code>号，内容前面要有空格与<code>#</code>隔开：</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
-<span class="token title important"><span class="token punctuation">##</span> 二级标题</span>
-<span class="token title important"><span class="token punctuation">###</span> 三级标题</span>
-<span class="token title important"><span class="token punctuation">####</span> 四级标题</span>
-<span class="token title important"><span class="token punctuation">#####</span> 五级标题</span>
-<span class="token title important"><span class="token punctuation">######</span> 六级标题</span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt="方法二"></p>
-<hr>
-<h2 id="3-段落"><a href="#3-段落" class="headerlink" title="3.段落"></a>3.段落</h2><blockquote>
-<p>方法一：在段落最后使用加入<code>&lt;br/&gt;</code>标签实现换行。<br>方法二：段落最后按<code>两次回车</code>，直接隔一行写。</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown">段落1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span> 
-段落2</code></pre>
-<p>或者：</p>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown">段落1
-
-段落2</code></pre>
-
-<hr>
-<h2 id="4-文字效果"><a href="#4-文字效果" class="headerlink" title="4.文字效果"></a>4.文字效果</h2><blockquote>
-<p>改变字体形态相关写法</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">斜体文本</span><span class="token punctuation">*</span></span>
-<span class="token italic"><span class="token punctuation">_</span><span class="token content">斜体文本</span><span class="token punctuation">_</span></span>
-<span class="token bold"><span class="token punctuation">**</span><span class="token content">粗体文本</span><span class="token punctuation">**</span></span>
-<span class="token italic"><span class="token punctuation">_</span><span class="token content">粗体文本</span><span class="token punctuation">_</span></span>
-<span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">粗斜体文本</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>
-<span class="token strike"><span class="token punctuation">~~</span><span class="token content">带删除线文本</span><span class="token punctuation">~~</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">></span></span>带下划线文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">></span></span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><em>粗体文本</em><br><em><strong>粗斜体文本</strong></em><br><del>带删除线文本</del><br><u>带下划线文本</u></p>
-<hr>
-<h2 id="5-分隔线"><a href="#5-分隔线" class="headerlink" title="5.分隔线"></a>5.分隔线</h2><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important">***
-<span class="token punctuation">---</span></span>
-<span class="token title important">******
-<span class="token punctuation">----------</span></span>
-__________
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span></code></pre>
-<p>输出结果：<br><img src="https://pic.rmb.bdstatic.com/bjh/b27aeb1539ec9fc8b1ecf80e65f44ec2.png" alt="分割线"></p>
-<hr>
-<h2 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h2><blockquote>
-<p>Markdown 支持有序列表和无序列表。<br>无序列表可使用星号:<code>*</code>、加号：<code>+</code>、减号<code>-</code>都可以，符号与内容要有空格隔开。<br>有序列表直接<code>数字+.</code>即可,符号与内容要有空格隔开。</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 无序列表项1
-<span class="token list punctuation">*</span> 无序列表项2
-
-<span class="token list punctuation">+</span> 无序列表项1
-<span class="token list punctuation">+</span> 无序列表项2
-
-<span class="token list punctuation">-</span> 无序列表项1
-<span class="token list punctuation">-</span> 无序列表项2
-
-<span class="token list punctuation">1.</span> 有序列表1
-<span class="token list punctuation">2.</span> 有序列表2
-<span class="token list punctuation">3.</span> 有序列表3</code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/93bda90ffe4af9ad5ed5e6b844c0f1b6.jpeg" alt="列表"></p>
-<blockquote>
-<p>列表嵌套写法：直接在第二行按Tab键或按四下空格缩进一下即可。</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> 第一项：
-    <span class="token list punctuation">-</span> 第一项第一个
-    <span class="token list punctuation">-</span> 第一项第二个
-<span class="token list punctuation">2.</span> 第二项：
-    <span class="token list punctuation">-</span> 第二项第一个
-    <span class="token list punctuation">-</span> 第二项第二个</code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/ef6305325bdccebe5540cd2d87df29cd.jpeg" alt="嵌套写法"></p>
-<hr>
-<h2 id="7-引用区块"><a href="#7-引用区块" class="headerlink" title="7.引用区块"></a>7.引用区块</h2><blockquote>
-<p>在文本前面添加&gt; 符号即可将文本变为引用区块。</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 文本内容</code></pre>
-<p>输出结果：<br><img src="https://pic.rmb.bdstatic.com/bjh/a5070f4115d23a2cd545bfd4820e1560.jpeg" alt="区块"></p>
-<hr>
-<h2 id="8-代码块"><a href="#8-代码块" class="headerlink" title="8.代码块"></a>8.代码块</h2><blockquote>
-<p>可使用三个<kbd>`</kbd>符号包裹住代码块，并指定一种语言即可生成代码预览区域。此符号一定要在英文状态下才能打出。</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/dc77b136ea98b7d74942c123d1c3eeaa.jpeg" alt="代码块"></p>
-<blockquote>
-<p>如果在文字行内插入代码块，可以在代码前后分别插入一个<kbd>`</kbd>符号即可。</p>
-</blockquote>
-<hr>
-<h2 id="9-链接"><a href="#9-链接" class="headerlink" title="9.链接"></a>9.链接</h2><blockquote>
-<p>有两种写法</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown">链接写法1：&lt;https://cn.bing.com/>
-链接写法2：<span class="token url">[<span class="token content">必应</span>](<span class="token url">https://cn.bing.com/</span>)</span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p>链接写法1：<a href="https://cn.bing.com/">https://cn.bing.com/</a><br>链接写法2：<a href="https://cn.bing.com/">必应</a></p>
-<hr>
-<h2 id="10-图片"><a href="#10-图片" class="headerlink" title="10.图片"></a>10.图片</h2><blockquote>
-<p>Markdown 图片语法格式如下：</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">alt 属性文本</span>](<span class="token url">图片地址</span>)</span>
-
-<span class="token url"><span class="token operator">!</span>[<span class="token content">alt 属性文本</span>](<span class="token url">图片地址</span> <span class="token string">"可选标题"</span>)</span></code></pre>
-<blockquote>
-<p>例子：</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">百度</span>](<span class="token url">https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png</span>)</span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度"></p>
-<blockquote>
-<p>第二种方法</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">百度</span>][<span class="token variable">1</span>]</span>
-
-[1]:https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png</code></pre>
-<blockquote>
-<p>两种方法效果相同</p>
-</blockquote>
-<hr>
-<h2 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h2><blockquote>
-<p>制作表格可使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-</blockquote>
-<p>也可以设置表格的对齐方式：<br><code>-:</code>设置内容和标题栏居右对齐。<br><code>:-</code>设置内容和标题栏居左对齐。<br><code>:-:</code>设置内容和标题栏居中对齐。</p>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 左对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 右对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 居中对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 默认对齐 </span><span class="token punctuation">|</span>
-</span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">:-----</span><span class="token punctuation">|</span> <span class="token punctuation">----:</span>  <span class="token punctuation">|</span> <span class="token punctuation">:----:</span>  <span class="token punctuation">|</span> <span class="token punctuation">------</span>  <span class="token punctuation">|</span>
-</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span>
-<span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span></span></span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-<th>默认对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h1><h2 id="支持-HTML-代码"><a href="#支持-HTML-代码" class="headerlink" title="支持 HTML 代码"></a>支持 HTML 代码</h2><blockquote>
-<p>markdown是支持html且正常识别。因此，可以解锁更多自定义写法。</p>
-</blockquote>
-<p>例：标题</p>
-<pre class="language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>一级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>二级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>三级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span>四级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">></span></span>五级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">></span></span>六级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">></span></span></code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg"></p>
-<blockquote>
-<p>可以去查阅Html的文档了解更多：<a href="https://www.runoob.com/html/">菜鸟教程-HTML文档</a></p>
-</blockquote>
-<hr>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><blockquote>
-<p>如果在输出以下字符无法正常输出,可在字符前面加上反斜杠<code>\</code>符号。<br>例如我想正常输出” * “号，且不会被识别成格式控制符号，可以写为<code>\*</code></p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/ffc6988469caceefb6927763a11af2f7.jpeg" alt="转义字符表"></p>
-<blockquote>
-<p>竖线比较特殊，在markdown的表格内不能直接用反斜杠<code>\|</code>转义，可使用html的字符代码<code>&amp;#124;</code>代替。</p>
-</blockquote>
-<hr>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><blockquote>
-<p>输出数学公式需要对应的插件支持。只需要用<code>$</code>符号把公式包裹起来就行。如果是复杂的公式则可以用两个<code>$$</code>符号。</p>
-</blockquote>
-<blockquote>
-<p>我的博客是安装了MathJax 数学插件的</p>
-</blockquote>
-<pre class="language-markdown" data-language="markdown"><code class="language-markdown">行内公式（适用于简单公式）：$ x^2 + \sqrt&#123;y&#125; = z $
-
-单独占一行(适用于复杂的公式)：
-$$
-\frac&#123;d&#125;&#123;dx&#125;e^&#123;ax&#125;=ae^&#123;ax&#125;\quad \sum_&#123;i=1&#125;^&#123;n&#125;&#123;(X_i - \overline&#123;X&#125;)^2&#125;
-$$</code></pre>
-<blockquote>
-<p>输出结果：</p>
-</blockquote>
-<p>行内公式（适用于简单公式）：$ x^2 + \sqrt{y} &#x3D; z $</p>
-<p>单独占一行(适用于复杂的公式)：<br>$$<br>\frac{d}{dx}e^{ax}&#x3D;ae^{ax}\quad \sum_{i&#x3D;1}^{n}{(X_i - \overline{X})^2}<br>$$</p>
-<hr>
-<p>好了，教程到这里就结束了（｡ò ∀ ó｡）</p>
-<p>试着自己用markdown写一些东西吧(σ′▽‵)′▽‵)σ</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown 基础教程</title>
+      <link href="/post/8513d0f8.html"/>
+      <url>/post/8513d0f8.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-什么是Markdown"><a href="#1-什么是Markdown" class="headerlink" title="1.什么是Markdown"></a>1.什么是Markdown</h2><blockquote><p><code>Markdown</code>是一种轻量标记语言,通过简单的语法，使普通文本具有一定的格式。文件后缀名一般为<code>.md</code></p></blockquote><blockquote><p><strong>注意</strong>：用到的符号必须在英文状态下输入才会生效</p></blockquote><h1 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h1><hr><h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><p>有两种写法：</p><h3 id="方法一：在文字下方输入-或-构成的线"><a href="#方法一：在文字下方输入-或-构成的线" class="headerlink" title="方法一：在文字下方输入-或=构成的线:"></a>方法一：在文字下方输入<code>-</code>或<code>=</code>构成的线:</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important">我展示的是一级标题<span class="token punctuation">=================</span></span><span class="token title important">我展示的是二级标题<span class="token punctuation">-----------------</span></span></code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/62fb3293b1633c3ed4a3783127f9d02d.jpeg" alt="方法一"></p><h3 id="方法二：在文字前面插入-号，内容前面要有空格与-隔开："><a href="#方法二：在文字前面插入-号，内容前面要有空格与-隔开：" class="headerlink" title="方法二：在文字前面插入#号，内容前面要有空格与#隔开："></a>方法二：在文字前面插入<code>#</code>号，内容前面要有空格与<code>#</code>隔开：</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span><span class="token title important"><span class="token punctuation">##</span> 二级标题</span><span class="token title important"><span class="token punctuation">###</span> 三级标题</span><span class="token title important"><span class="token punctuation">####</span> 四级标题</span><span class="token title important"><span class="token punctuation">#####</span> 五级标题</span><span class="token title important"><span class="token punctuation">######</span> 六级标题</span></code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt="方法二"></p><hr><h2 id="3-段落"><a href="#3-段落" class="headerlink" title="3.段落"></a>3.段落</h2><blockquote><p>方法一：在段落最后使用加入<code>&lt;br/&gt;</code>标签实现换行。<br>方法二：段落最后按<code>两次回车</code>，直接隔一行写。</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown">段落1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span> 段落2</code></pre><p>或者：</p><pre class="language-markdown" data-language="markdown"><code class="language-markdown">段落1段落2</code></pre><hr><h2 id="4-文字效果"><a href="#4-文字效果" class="headerlink" title="4.文字效果"></a>4.文字效果</h2><blockquote><p>改变字体形态相关写法</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">斜体文本</span><span class="token punctuation">*</span></span><span class="token italic"><span class="token punctuation">_</span><span class="token content">斜体文本</span><span class="token punctuation">_</span></span><span class="token bold"><span class="token punctuation">**</span><span class="token content">粗体文本</span><span class="token punctuation">**</span></span><span class="token italic"><span class="token punctuation">_</span><span class="token content">粗体文本</span><span class="token punctuation">_</span></span><span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">粗斜体文本</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span><span class="token strike"><span class="token punctuation">~~</span><span class="token content">带删除线文本</span><span class="token punctuation">~~</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">></span></span>带下划线文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">></span></span></code></pre><blockquote><p>输出结果：</p></blockquote><p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><em>粗体文本</em><br><em><strong>粗斜体文本</strong></em><br><del>带删除线文本</del><br><u>带下划线文本</u></p><hr><h2 id="5-分隔线"><a href="#5-分隔线" class="headerlink" title="5.分隔线"></a>5.分隔线</h2><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important">***<span class="token punctuation">---</span></span><span class="token title important">******<span class="token punctuation">----------</span></span>__________<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span></code></pre><p>输出结果：<br><img src="https://pic.rmb.bdstatic.com/bjh/b27aeb1539ec9fc8b1ecf80e65f44ec2.png" alt="分割线"></p><hr><h2 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h2><blockquote><p>Markdown 支持有序列表和无序列表。<br>无序列表可使用星号:<code>*</code>、加号：<code>+</code>、减号<code>-</code>都可以，符号与内容要有空格隔开。<br>有序列表直接<code>数字+.</code>即可,符号与内容要有空格隔开。</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 无序列表项1<span class="token list punctuation">*</span> 无序列表项2<span class="token list punctuation">+</span> 无序列表项1<span class="token list punctuation">+</span> 无序列表项2<span class="token list punctuation">-</span> 无序列表项1<span class="token list punctuation">-</span> 无序列表项2<span class="token list punctuation">1.</span> 有序列表1<span class="token list punctuation">2.</span> 有序列表2<span class="token list punctuation">3.</span> 有序列表3</code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/93bda90ffe4af9ad5ed5e6b844c0f1b6.jpeg" alt="列表"></p><blockquote><p>列表嵌套写法：直接在第二行按Tab键或按四下空格缩进一下即可。</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> 第一项：    <span class="token list punctuation">-</span> 第一项第一个    <span class="token list punctuation">-</span> 第一项第二个<span class="token list punctuation">2.</span> 第二项：    <span class="token list punctuation">-</span> 第二项第一个    <span class="token list punctuation">-</span> 第二项第二个</code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/ef6305325bdccebe5540cd2d87df29cd.jpeg" alt="嵌套写法"></p><hr><h2 id="7-引用区块"><a href="#7-引用区块" class="headerlink" title="7.引用区块"></a>7.引用区块</h2><blockquote><p>在文本前面添加&gt; 符号即可将文本变为引用区块。</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 文本内容</code></pre><p>输出结果：<br><img src="https://pic.rmb.bdstatic.com/bjh/a5070f4115d23a2cd545bfd4820e1560.jpeg" alt="区块"></p><hr><h2 id="8-代码块"><a href="#8-代码块" class="headerlink" title="8.代码块"></a>8.代码块</h2><blockquote><p>可使用三个<kbd>`</kbd>符号包裹住代码块，并指定一种语言即可生成代码预览区域。此符号一定要在英文状态下才能打出。</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/dc77b136ea98b7d74942c123d1c3eeaa.jpeg" alt="代码块"></p><blockquote><p>如果在文字行内插入代码块，可以在代码前后分别插入一个<kbd>`</kbd>符号即可。</p></blockquote><hr><h2 id="9-链接"><a href="#9-链接" class="headerlink" title="9.链接"></a>9.链接</h2><blockquote><p>有两种写法</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown">链接写法1：&lt;https://cn.bing.com/>链接写法2：<span class="token url">[<span class="token content">必应</span>](<span class="token url">https://cn.bing.com/</span>)</span></code></pre><blockquote><p>输出结果：</p></blockquote><p>链接写法1：<a href="https://cn.bing.com/">https://cn.bing.com/</a><br>链接写法2：<a href="https://cn.bing.com/">必应</a></p><hr><h2 id="10-图片"><a href="#10-图片" class="headerlink" title="10.图片"></a>10.图片</h2><blockquote><p>Markdown 图片语法格式如下：</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">alt 属性文本</span>](<span class="token url">图片地址</span>)</span><span class="token url"><span class="token operator">!</span>[<span class="token content">alt 属性文本</span>](<span class="token url">图片地址</span> <span class="token string">"可选标题"</span>)</span></code></pre><blockquote><p>例子：</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">百度</span>](<span class="token url">https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png</span>)</span></code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度"></p><blockquote><p>第二种方法</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">百度</span>][<span class="token variable">1</span>]</span>[1]:https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png</code></pre><blockquote><p>两种方法效果相同</p></blockquote><hr><h2 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h2><blockquote><p>制作表格可使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p></blockquote><p>也可以设置表格的对齐方式：<br><code>-:</code>设置内容和标题栏居右对齐。<br><code>:-</code>设置内容和标题栏居左对齐。<br><code>:-:</code>设置内容和标题栏居中对齐。</p><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 左对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 右对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 居中对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 默认对齐 </span><span class="token punctuation">|</span></span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">:-----</span><span class="token punctuation">|</span> <span class="token punctuation">----:</span>  <span class="token punctuation">|</span> <span class="token punctuation">:----:</span>  <span class="token punctuation">|</span> <span class="token punctuation">------</span>  <span class="token punctuation">|</span></span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span></span></span></code></pre><blockquote><p>输出结果：</p></blockquote><table><thead><tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中对齐</th><th>默认对齐</th></tr></thead><tbody><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td><td>单元格</td></tr><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td><td>单元格</td></tr></tbody></table><hr><h1 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h1><h2 id="支持-HTML-代码"><a href="#支持-HTML-代码" class="headerlink" title="支持 HTML 代码"></a>支持 HTML 代码</h2><blockquote><p>markdown是支持html且正常识别。因此，可以解锁更多自定义写法。</p></blockquote><p>例：标题</p><pre class="language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>一级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>二级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>三级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span>四级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">></span></span>五级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">></span></span>六级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">></span></span></code></pre><blockquote><p>输出结果：</p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg"></p><blockquote><p>可以去查阅Html的文档了解更多：<a href="https://www.runoob.com/html/">菜鸟教程-HTML文档</a></p></blockquote><hr><h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><blockquote><p>如果在输出以下字符无法正常输出,可在字符前面加上反斜杠<code>\</code>符号。<br>例如我想正常输出” * “号，且不会被识别成格式控制符号，可以写为<code>\*</code></p></blockquote><p><img src="https://pic.rmb.bdstatic.com/bjh/ffc6988469caceefb6927763a11af2f7.jpeg" alt="转义字符表"></p><blockquote><p>竖线比较特殊，在markdown的表格内不能直接用反斜杠<code>\|</code>转义，可使用html的字符代码<code>&amp;#124;</code>代替。</p></blockquote><hr><h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><blockquote><p>输出数学公式需要对应的插件支持。只需要用<code>$</code>符号把公式包裹起来就行。如果是复杂的公式则可以用两个<code>$$</code>符号。</p></blockquote><blockquote><p>我的博客是安装了MathJax 数学插件的</p></blockquote><pre class="language-markdown" data-language="markdown"><code class="language-markdown">行内公式（适用于简单公式）：$ x^2 + \sqrt&#123;y&#125; = z $单独占一行(适用于复杂的公式)：$$\frac&#123;d&#125;&#123;dx&#125;e^&#123;ax&#125;=ae^&#123;ax&#125;\quad \sum_&#123;i=1&#125;^&#123;n&#125;&#123;(X_i - \overline&#123;X&#125;)^2&#125;$$</code></pre><blockquote><p>输出结果：</p></blockquote><p>行内公式（适用于简单公式）：$ x^2 + \sqrt{y} &#x3D; z $</p><p>单独占一行(适用于复杂的公式)：<br>$$<br>\frac{d}{dx}e^{ax}&#x3D;ae^{ax}\quad \sum_{i&#x3D;1}^{n}{(X_i - \overline{X})^2}<br>$$</p><hr><p>好了，教程到这里就结束了（｡ò ∀ ó｡）</p><p>试着自己用markdown写一些东西吧(σ′▽‵)′▽‵)σ</p>]]></content>
+      
+      
       <categories>
-        <category>教程</category>
+          
+          <category> 教程 </category>
+          
       </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
