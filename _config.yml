@@ -168,5 +168,4 @@ backup:
   theme: butterfly
   message: Back up my www.itrhx.com blog
   repository:
-    github: git@github.com:yxlr123/yxlr123.github.io.git,backup
-
+    github: https://github.com/yxlr123/yxlr123.github.io.git,backup
