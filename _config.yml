@@ -166,6 +166,6 @@ feed:
 backup:
   type: git
   theme: butterfly
-  message: Back up my www.itrhx.com blog
+  message: Back up my yxlr.tk blog
   repository:
     github: https://github.com/yxlr123/yxlr123.github.io.git,backup
