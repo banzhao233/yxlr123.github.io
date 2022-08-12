@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yxlr.tk/link/index.html</loc>
+    
+    <lastmod>2022-08-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yxlr.tk/about/index.html</loc>
+    
+    <lastmod>2022-08-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yxlr.tk/post/aa65a614.html</loc>
     
     <lastmod>2022-08-12</lastmod>
@@ -14,24 +32,6 @@
     <loc>https://yxlr.tk/post/8513d0f8.html</loc>
     
     <lastmod>2022-08-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/link/index.html</loc>
-    
-    <lastmod>2022-08-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/about/index.html</loc>
-    
-    <lastmod>2022-08-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -65,6 +65,13 @@
 
   
   <url>
+    <loc>https://yxlr.tk/tags/Markdown/</loc>
+    <lastmod>2022-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yxlr.tk/tags/hexo/</loc>
     <lastmod>2022-08-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,13 +87,6 @@
   
   <url>
     <loc>https://yxlr.tk/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/tags/Markdown/</loc>
     <lastmod>2022-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
