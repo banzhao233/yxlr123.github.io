@@ -9,7 +9,8 @@ abbrlink: 8513d0f8
 date: 2022-08-05 05:13:46
 summary: Markdown是一种轻量标记语言。
 top_img: https://pic.rmb.bdstatic.com/bjh/299fc5d5c5d9f18629ba9838dfdf7d8d.jpeg
-mathjax:
+katex: true
+cover: https://pic.rmb.bdstatic.com/bjh/299fc5d5c5d9f18629ba9838dfdf7d8d.jpeg
 ---
 ## 1.什么是Markdown
 > `Markdown`是一种轻量标记语言,通过简单的语法，使普通文本具有一定的格式。文件后缀名一般为`.md`

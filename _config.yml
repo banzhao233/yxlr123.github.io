@@ -168,3 +168,15 @@ backup:
   theme: butterfly
   repository:
     github: git@github.com:yxlr123/yxlr123.github.io.git,backup
+
+nofollow:
+  enable: true
+  field: site
+  exclude:
+
+markdown:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
