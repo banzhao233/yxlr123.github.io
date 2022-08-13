@@ -58,7 +58,7 @@
 
   <url>
     <loc>https://yxlr.tk/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,28 +66,28 @@
   
   <url>
     <loc>https://yxlr.tk/tags/Markdown/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yxlr.tk/tags/hexo/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yxlr.tk/tags/web/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yxlr.tk/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -96,7 +96,7 @@
   
   <url>
     <loc>https://yxlr.tk/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-08-12</lastmod>
+    <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
