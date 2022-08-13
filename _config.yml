@@ -108,7 +108,7 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/yxlr123/yxlr123.github.io.git
-  branch: gh-pages
+  branch: master
 
 wordcount:
   enable: true
@@ -167,7 +167,7 @@ backup:
   type: git
   theme: butterfly
   repository:
-    github: git@github.com:yxlr123/yxlr123.github.io.git,master
+    github: git@github.com:yxlr123/yxlr123.github.io.git,backup
 
 nofollow:
   enable: true
