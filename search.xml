@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客建站指南</title>
+    <url>/post/8862f8fb.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo+github搭建博客教程</title>
     <url>/post/aa65a614.html</url>
     <content><![CDATA[<h2 id="前言">前言</h2>
@@ -118,9 +130,9 @@ pretty_urls:
         <category>教程</category>
       </categories>
       <tags>
+        <tag>教程</tag>
         <tag>hexo</tag>
         <tag>web</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -392,18 +404,6 @@ $$</code></pre>
       </categories>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客建站指南</title>
-    <url>/post/8862f8fb.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>博客</tag>
       </tags>
   </entry>
 </search>
