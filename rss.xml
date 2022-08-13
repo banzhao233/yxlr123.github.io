@@ -9,8 +9,31 @@
     <atom:link href="https://yxlr.tk/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>分享与收获</description>
-    <pubDate>Fri, 12 Aug 2022 04:20:24 GMT</pubDate>
+    <pubDate>Sat, 13 Aug 2022 04:25:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>博客建站指南</title>
+      <link>https://yxlr.tk/post/8862f8fb.html</link>
+      <guid>https://yxlr.tk/post/8862f8fb.html</guid>
+      <pubDate>Sat, 13 Aug 2022 04:06:54 GMT</pubDate>
+      
+      <description>博客建站方案推荐(小白)</description>
+      
+      
+      
+      
+      <category domain="https://yxlr.tk/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://yxlr.tk/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="https://yxlr.tk/tags/%E5%8D%9A%E5%AE%A2/">博客</category>
+      
+      
+      <comments>https://yxlr.tk/post/8862f8fb.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Markdown 基础教程</title>
