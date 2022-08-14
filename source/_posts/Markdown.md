@@ -1,13 +1,13 @@
 ---
-title: Markdown 基础教程
-toc: true
+title: Markdown 基础语法
+toc: true 
+description: Markdown是一种轻量标记语言。
 categories:
-  - 教程
+  - 语法
 tags:
   - Markdown
 abbrlink: 8513d0f8
 date: 2022-08-05 05:13:46
-summary: Markdown是一种轻量标记语言。
 top_img: https://pic.rmb.bdstatic.com/bjh/299fc5d5c5d9f18629ba9838dfdf7d8d.jpeg
 katex: true
 cover: https://pic.rmb.bdstatic.com/bjh/299fc5d5c5d9f18629ba9838dfdf7d8d.jpeg
