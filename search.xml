@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客建站指南</title>
-    <url>/post/8862f8fb.html</url>
-    <content><![CDATA[<p>在这里，我会向大家介绍一些小白建个人博客的各种方案，以及它们的优缺点</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-        <tag>建站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基础语法</title>
     <url>/post/8513d0f8.html</url>
     <content><![CDATA[<h2 id="1-什么是Markdown">1.什么是Markdown</h2>
@@ -403,9 +389,9 @@ pretty_urls:
         <category>教程</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>hexo</tag>
         <tag>web</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
 </search>
