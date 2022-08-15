@@ -193,10 +193,7 @@ hpptalk:
   css:
   option:
   front_matter:
-
-lazyload:
-  enable: true
-  loadingImg: https://img.yxlr.tk/file/myblogyxlr/loading.gif
+    title: 网站日志
 
 # enable: 开启/关闭 推送
 # count: 每次提交最新的10篇文章
@@ -212,3 +209,19 @@ hexo_seo_autopush:
     enable: false
     count: 10
     google_file: google_service_account.json # 谷歌服务账户
+# offline config passed to sw-precache.
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: unpkg.com
