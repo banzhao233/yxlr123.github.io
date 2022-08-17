@@ -108,7 +108,7 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/yxlr123/yxlr123.github.io.git
-  branch: master
+  branch: blog
 
 wordcount:
   enable: true
@@ -131,7 +131,7 @@ live2d:
     width: 150
     height: 300
   mobile:
-    show: true
+    show: false
     react:
     opacity: 0.5
 
@@ -225,3 +225,6 @@ service_worker:
       handler: cacheFirst
       options:
         origin: unpkg.com
+
+butterfly_article_double_row:
+  enable: true
