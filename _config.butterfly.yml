@@ -8,9 +8,8 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   博客曰志: /hpptalk/ || fas fa-book
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  工具||fad fa-toolbox:
+    API: /api/ || fad fa-link
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
 
