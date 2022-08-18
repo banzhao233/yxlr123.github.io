@@ -8,8 +8,8 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   博客曰志: /hpptalk/ || fas fa-book
-  工具||fad fa-toolbox:
-    API: /api/ || fad fa-link
+  工具||fa-duotone fa-screwdriver-wrench
+    API: /api/ || fa-regular fa-link-simple
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
 
