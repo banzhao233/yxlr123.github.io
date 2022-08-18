@@ -5,8 +5,6 @@ updated: 2022-08-18 21:17:18
 ---
 > 目前只有只有两个API，以后会逐渐丰富(^_^)
 
-{% tabs API,2 %}
-<!-- tab bing每天一图 -->
 # bing 每天一图
 接口：https://api.yxlr.tk/bing-img/index.php
 演示：
@@ -45,14 +43,11 @@ updated: 2022-08-18 21:17:18
 
 > 数字中间使用小写字母 **x** ，
 > 非数学符号 **×** 。
-> 
-<!-- endtab -->
-<!-- tab 随机二次元图片 -->
+
+# 随机二次元图片
+
 API接口：https://api.yxlr.tk/random-img/index.php
 说明文档：https://api.yxlr.tk/random-img/说明.html
 > 演示：
 
 ![演示](https://api.yxlr.tk/random-img/index.php)
-<!-- endtab>
-{% endtabs %}
-
