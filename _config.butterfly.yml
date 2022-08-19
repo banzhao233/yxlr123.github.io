@@ -840,8 +840,6 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://https://cdn.baomitu.com//css2?family=JetBrains+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://https://cdn.baomitu.com//css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     # - <link rel="stylesheet" href="/xxx.css">
