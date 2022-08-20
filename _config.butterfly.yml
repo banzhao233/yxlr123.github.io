@@ -410,8 +410,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: <a target="_blank" href="http://www.freecdn.pw/?zzlogo" title="免费云加速（FreeCDN），为您免费提供网站加速和网站防御（DDOS、CC攻击）" ><img src="http://www.freecdn.pw/images/zzlogo.png" width="150" height="80
-" alt="免费云加速（FreeCDN），为您免费提供网站加速和网站防御（DDOS、CC攻击）"></a>
+  custom_text: <a href="http://www.freecdn.pw/?zzlogo>src=<span>本站由Freecdn提供加速和防御服务</span></a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
