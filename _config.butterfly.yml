@@ -586,7 +586,7 @@ beautify:
 font:
   global-font-size:
   code-font-size: 
-  font-family: ZCOOL KuaiLe
+  font-family: ZCOOL KuaiLe, cursive
   code-font-family:
 
 # Font settings for the site title and site subtitle
