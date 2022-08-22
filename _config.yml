@@ -197,3 +197,8 @@ hpptalk:
 
 butterfly_article_double_row:
   enable: true
+ 
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: https://img.yxlr.tk/file/myblogyxlr/loading.gif
