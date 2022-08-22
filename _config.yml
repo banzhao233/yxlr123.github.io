@@ -201,4 +201,4 @@ butterfly_article_double_row:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /imag/loading.gif
+  loadingImg: /img/loading.gif
