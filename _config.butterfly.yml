@@ -510,7 +510,7 @@ footer_bg: true
 rightside-bottom:
 
 # Enter transitions (開啓網頁進入效果)
-enter_transitions: false
+enter_transitions: true
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -801,7 +801,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -815,7 +815,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
