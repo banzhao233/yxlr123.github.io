@@ -79,11 +79,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://img.yxlr.tk/file/myblogyxlr/img/avatar.png
+favicon: https://cdn.staticaly.com/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://img.yxlr.tk/file/myblogyxlr/img/avatar.png
+  img: https://cdn.staticaly.com/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
   effect: false
 
 # Disable all banner image
