@@ -1,22 +1,23 @@
 ---
 date: 2022-08-17 21:15:32
 title: 各种api接口
-updated: 2022-08-18 21:17:18
----
-> 目前只有只有两个API，以后会逐渐丰富(^_^)
+updated: 2022-08-28 15:50:35
+---> 目前只有只有三个API，以后会逐渐丰富(^_^)
 
 # bing 每天一图
+
 接口：https://api.yxlr.tk/bing-img/index.php
 演示：
 ![bing-img](https://api.yxlr.tk/bing-img/index.php)
 
 > 此接口使用开源项目[bing-image-api](https://github.com/mcxiaolan/bing-image-api)
 
+
 | 可选参数 |         参数含义         |                       可用变量                       |
 | :------: | :----------------------: | :--------------------------------------------------: |
-|   rand   | 随机显示最近8天内的图片 |          **true** or **false**          |
+|   rand   | 随机显示最近8天内的图片 |                **true** or **false**                |
 |   day   |    显示指定的最近图片    | -1，0，1，2，3，4，5，6，7(0为今天，1为昨天，-1未知) |
-|   info   | 获取图片json格式基础信息 |          **true** or **false**          |
+|   info   | 获取图片json格式基础信息 |                **true** or **false**                |
 
 ## 默认参数
 
@@ -48,6 +49,18 @@ updated: 2022-08-18 21:17:18
 
 API接口：https://api.yxlr.tk/random-img/index.php
 说明文档：https://api.yxlr.tk/random-img/说明.html
+
 > 演示：
 
 ![演示](https://api.yxlr.tk/random-img/index.php)
+
+# 微信域名拦截检测
+
+* 请求地址：https://api.yxlr.tk/qqym/index.php
+* 请求方法：https://api.yxlr.tk/qqym/index.php?url=`要检测的域名`
+
+示例：https://api.yxlr.tk/qqym/index.php?url=yxlr.tk
+
+返回：
+
+![](https://cdn.staticaly.com/gh/yxlr123/imges@main/Screenshot_20220828_155537.3fkf8e67hwy0.webp)
