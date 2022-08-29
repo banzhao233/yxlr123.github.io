@@ -181,20 +181,6 @@ markdown:
       options:
         strict: false
 
-# HexoPlusPlus Talk
-# see https://hexoplusplus.js.org
-hpptalk:
-  enable: true 
-  domain: admin.yxlr.tk
-  path:
-  limit:
-  start:
-  js:
-  css:
-  option:
-  front_matter:
-    title: 网站日志
-
 butterfly_article_double_row:
   enable: true
  
