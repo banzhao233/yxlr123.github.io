@@ -7,5 +7,5 @@ updated: 2022-08-29 12:04:14
 
 <div id="qexot"></div>
 
-<script>showQexoTalks("qexot", "admin-yxlr.tk", 5)</scrip
+<script>showQexoTalks("qexot", "admin-yxlr.tk", 5)</scrip>
 
