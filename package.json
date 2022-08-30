@@ -42,7 +42,6 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-wordcount": "^6.0.1",
-    "live2d-widget-model-haruto": "^1.0.5"
-    "hexo-offline": "^2.0.1"
+    "live2d-widget-model-haruto": "^1.0.5",
   }
 }
