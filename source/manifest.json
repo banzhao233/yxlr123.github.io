@@ -1,7 +1,14 @@
-{
-    "name": "\u5e7d\u9999\u4e50\u5bb9\u306e\u535a\u5ba2",
-    "short_name": "\u5e7d\u9999\u4e50\u5bb9\u306e\u535a\u5ba2",
-    "icons": [
+"lang": "zh-CN",
+"dir": "ltr",
+"name": "幽香乐容の博客",
+"description": "Yxlr.tk",
+"display": "standalone",
+"short_name": "幽香乐容",
+"scope": "/",
+"start_url": "/",
+"theme_color": "#212121",
+"background_color": "#212121",
+"icons": [
         {
             "src": "/img/pwa/android-chrome-36x36.png",
             "sizes": "36x36",
@@ -47,8 +54,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    ]
 }
