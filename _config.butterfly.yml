@@ -421,7 +421,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: G-SGDWLXCVCW
+google_analytics:
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -433,7 +433,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: de5don1wen
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -585,7 +585,7 @@ beautify:
 font:
   global-font-size:
   code-font-size: 
-  font-family: ZCOOL KuaiLe
+  font-family:
   code-font-family:
 
 # Font settings for the site title and site subtitle
@@ -840,7 +840,6 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/static-butterfly/dist/css/index.min.css">
-    - <link rel="stylesheet" href="/font/myfont.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
