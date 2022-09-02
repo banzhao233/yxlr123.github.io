@@ -866,7 +866,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format: https://lib.baomitu.com/${cdnjs_name}/latest/${min_cdnjs_file}
 
   option:
     # main_css: 
