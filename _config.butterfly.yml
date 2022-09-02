@@ -840,9 +840,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
-    - <link rel="preconnect" href="https://fonts.geekzu.org">
-    - <link rel="preconnect" href="https://.geekzu.org/g-fonts/" crossorigin>
-    - <link href="https://fonts.geekzu.org/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    - <link href="https://fonts.lug.ustc.edu.cn/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
