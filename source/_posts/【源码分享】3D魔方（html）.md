@@ -1,14 +1,15 @@
 ---
-abbrlink: ''
+abbrlink: f9fe76d9
 categories:
-- - 源码分享
-cover: http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg
+  - - 源码分享
+cover: >-
+  http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg
 date: '2022-09-02 10:18:44'
 description: html实现3D魔方小游戏
 keywords: html3D魔方小游戏
 tags:
-- html
-- 源码
+  - html
+  - 源码
 title: 【源码分享】html 3D魔方
 top_img: false
 updated: '2022-09-02 10:18:49'
