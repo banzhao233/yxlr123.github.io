@@ -840,7 +840,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
-    - <link href="https://fonts.lug.ustc.edu.cn/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="/font/myfont.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
