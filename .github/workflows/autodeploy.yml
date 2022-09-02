@@ -40,20 +40,12 @@ jobs:
           hexo clean
           yuque-hexo sync || yuque-hexo sync || yuque-hexo sync  # 用 || 来重试的次数
 
+      - name: 设置Git信息
+        run: |
+          git config --global user.name 'yxlr123' 
+          git config --global user.email 'dbh2858304517@gmail.com'
       # 生成可访问的文档
       - name: hexo generate
         run: |
           hexo g
-      
-      - name: 设置Git信息
-        run: |
-          git config --global user.name 'yxlr123' 
-          git config --global user.email 'dbh2858304517@gmail.com'      
-      - name: 部署到Github
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          token: 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
-          repository-name: yxlr123/yxlr123.github.io
-          branch: blog
-          folder: public
-          commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'
+          hexo d
