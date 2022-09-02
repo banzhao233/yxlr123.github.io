@@ -44,7 +44,11 @@ jobs:
       - name: hexo generate
         run: |
           hexo g
-
+      
+      - name: 设置Git信息
+        run: |
+          git config --global user.name 'yxlr123' 
+          git config --global user.email 'dbh2858304517@gmail.com'      
       - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
         with:
