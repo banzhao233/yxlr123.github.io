@@ -10,11 +10,16 @@ tags:
 - php
 - jsdelivr
 - 加速
-title: 自建jsdelivr代理服务
+title: 自建jsdelivr反代服务
 top_img: false
-updated: '2022-09-03 14:05:24'
+updated: '2022-09-03 14:28:56'
+swiper_index: 6
 ---
+
 ## 起因
 
-在前一段时间
+在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。
 
+![报错](http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg)
+
+后来
