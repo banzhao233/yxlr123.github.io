@@ -47,16 +47,7 @@
   </url>
   
   <url>
-    <loc>https://yxlr.tk/api/index.html</loc>
-    
-    <lastmod>2022-09-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/categories/index.html</loc>
+    <loc>https://yxlr.tk/img/pwa/README.html</loc>
     
     <lastmod>2022-09-03</lastmod>
     
@@ -74,7 +65,16 @@
   </url>
   
   <url>
-    <loc>https://yxlr.tk/img/pwa/README.html</loc>
+    <loc>https://yxlr.tk/api/index.html</loc>
+    
+    <lastmod>2022-09-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yxlr.tk/categories/index.html</loc>
     
     <lastmod>2022-09-03</lastmod>
     
