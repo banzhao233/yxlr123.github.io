@@ -9,13 +9,13 @@
     <atom:link href="https://yxlr.tk/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>分享与收获</description>
-    <pubDate>Sat, 03 Sep 2022 06:05:24 GMT</pubDate>
+    <pubDate>Sat, 03 Sep 2022 06:28:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>自建jsdelivr代理服务</title>
-      <link>https://yxlr.tk/post/2f2fd22d.html</link>
-      <guid>https://yxlr.tk/post/2f2fd22d.html</guid>
+      <title>自建jsdelivr反代服务</title>
+      <link>https://yxlr.tk/post/7db9c141.html</link>
+      <guid>https://yxlr.tk/post/7db9c141.html</guid>
       <pubDate>Sat, 03 Sep 2022 05:22:47 GMT</pubDate>
       
       <description>使用php搭建jsdelivr代理</description>
@@ -33,7 +33,7 @@
       <category domain="https://yxlr.tk/tags/%E5%8A%A0%E9%80%9F/">加速</category>
       
       
-      <comments>https://yxlr.tk/post/2f2fd22d.html#disqus_thread</comments>
+      <comments>https://yxlr.tk/post/7db9c141.html#disqus_thread</comments>
       
     </item>
     

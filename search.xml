@@ -603,10 +603,12 @@ code-server # 启动</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>自建jsdelivr代理服务</title>
-    <url>/post/2f2fd22d.html</url>
-    <content><![CDATA[<h2 id="起因-2">起因</h2>
-<p>在前一段时间</p>
+    <title>自建jsdelivr反代服务</title>
+    <url>/post/7db9c141.html</url>
+    <content><![CDATA[<h2 id="起因">起因</h2>
+<p>在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。</p>
+<p><img src="/img/loading.gif" data-original="http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
+<p>后来</p>
 ]]></content>
       <categories>
         <category>cdn</category>
