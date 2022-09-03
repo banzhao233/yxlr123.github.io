@@ -40,13 +40,11 @@ jobs:
           yuque-hexo sync || yuque-hexo sync || yuque-hexo sync  # 用 || 来重试的次数
 
       - name: 设置Git信息
-        run: |
-          git config --global user.name 'yxlr123' 
-          git config --global user.email 'dbh2858304517@gmail.com'
-      - name: Setup Deploy Private Key
         env:
           HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
         run: |
+          git config --global user.name "yxlr123"
+          git config --global user.email "dbh2858304517@gmail.com"
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa 
           chmod 600 ~/.ssh/id_rsa
