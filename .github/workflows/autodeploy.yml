@@ -20,11 +20,11 @@ jobs:
         uses: actions/checkout@master
 
       # from: https://github.com/actions/setup-node
-      - name: Setup Node.js 14.x
+      - name: 安装 Node.js 14.x
         uses: actions/setup-node@master
         with:
           node-version: "14.x"
-      - name: Setup Deploy
+      - name: 开始部署
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}    # 这个就是Source仓库的私钥
         run: |
