@@ -1,19 +1,18 @@
 ---
-abbrlink: ''
+abbrlink: 7db9c141
 categories:
-- - cdn
+  - - cdn
 cover: ''
 date: '2022-09-03 13:22:47'
 description: 使用php搭建jsdelivr代理
 keywords: 自建jsdelivr加速
 tags:
-- php
-- jsdelivr
-- 加速
+  - php
+  - jsdelivr
+  - 加速
 title: 自建jsdelivr反代服务
 top_img: false
 updated: '2022-09-03 14:28:56'
-swiper_index: 6
 ---
 
 ## 起因

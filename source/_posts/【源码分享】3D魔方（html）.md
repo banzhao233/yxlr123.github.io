@@ -13,7 +13,6 @@ tags:
 title: 【源码分享】html 3D魔方
 top_img: false
 updated: '2022-09-02 10:18:49'
-swiper_index: 5
 ---
 ![](http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg)
 
