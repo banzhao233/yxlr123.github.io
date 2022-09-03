@@ -1,11 +1,11 @@
-https://yxlr.tk/manifest.json
-https://yxlr.tk/links/index.html
 https://yxlr.tk/tags/index.html
 https://yxlr.tk/talks/index.html
 https://yxlr.tk/tools/index.html
+https://yxlr.tk/manifest.json
+https://yxlr.tk/links/index.html
 https://yxlr.tk/about/index.html
-https://yxlr.tk/categories/index.html
 https://yxlr.tk/api/index.html
+https://yxlr.tk/categories/index.html
 https://yxlr.tk/img/pwa/README.html
 https://yxlr.tk/post/7db9c141.html
 https://yxlr.tk/post/f9fe76d9.html
