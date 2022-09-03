@@ -585,7 +585,7 @@ beautify:
 font:
   global-font-size:
   code-font-size: 
-  font-family:
+  font-family: ZCOOL KuaiLe
   code-font-family:
 
 # Font settings for the site title and site subtitle
@@ -840,6 +840,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/static-butterfly/dist/css/index.min.css">
+    - <link rel="stylesheet" href="/css/mycss.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
@@ -851,7 +852,7 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
@@ -863,7 +864,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.yxlr.tk/npm/${cdnjs_name}/${min_cdnjs_file}
+  custom_format: https://npm.elemecdn.com/npm/${cdnjs_name}/${min_cdnjs_file}
 
   option:
     # main_css: 
