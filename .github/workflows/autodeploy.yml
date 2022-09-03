@@ -24,33 +24,21 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: "14.x"
-
-      #安装依赖(包含yuque-hexo，此处无需安装) from https://github.com/x-cold/yuque-hexo
-      - name: Install dependencies
+      - name: Setup Hexo
+        env: 
+        # HEXO_DEPLOY_PRI_XIAOXIN_WINDOW 这个就是配置hexo仓库secrets的name，一定要对应上
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRI_XIAOXIN_WINDOW }}
         run: |
-          npm install hexo-cli -g
-          npm install yuque-hexo -g
-          npm install
-
-      # 此处请勿使用hexo clean&&yuque-hexo（重新构建时无需此命令行）同步语雀文章
-      - name: yuque-hexo sync
-        env:
-          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN_HEXO_SYNC_GITHUB_ONLINE}} # from: 这里是YUQUE_TOKEN: $不能随意改
-        run: |
-          yuque-hexo sync || yuque-hexo sync || yuque-hexo sync  # 用 || 来重试的次数
-
-      - name: 设置Git信息
-        env:
-          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
-        run: |
-          git config --global user.name "yxlr123"
-          git config --global user.email "dbh2858304517@gmail.com"
           mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa 
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-      # 生成可访问的文档
-      - name: hexo generate
+          echo "$ACTION_DEPLOY_KEY"> ~/.ssh/id_rsa
+                    chmod 700 ~/.ssh
+                    chmod 600 ~/.ssh/id_rsa
+                    ssh-keyscan github.com >> ~/.ssh/known_hosts
+                    git config --global user.email "dbh2858304517@gmail.com"
+                    git config --global user.name "yxlr123"
+                    npm install hexo-cli -g
+                    npm install
+      - name: Deploy
         run: |
-          hexo g
-          hexo d
+            hexo clean
+            hexo deploy
