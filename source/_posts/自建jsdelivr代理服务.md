@@ -13,6 +13,7 @@ tags:
 title: 自建jsdelivr反代服务
 top_img: false
 updated: '2022-09-03 14:28:56'
+swiper_index: 3
 ---
 
 ## 起因
