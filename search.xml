@@ -602,4 +602,19 @@ code-server # 启动</code></pre>
         <tag>建站</tag>
       </tags>
   </entry>
+  <entry>
+    <title>自建jsdelivr代理服务</title>
+    <url>/post/2f2fd22d.html</url>
+    <content><![CDATA[<h2 id="起因">起因</h2>
+<p>在前一段时间</p>
+]]></content>
+      <categories>
+        <category>cdn</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>jsdelivr</tag>
+        <tag>加速</tag>
+      </tags>
+  </entry>
 </search>
