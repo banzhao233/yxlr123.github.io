@@ -37,25 +37,22 @@ jobs:
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN_HEXO_SYNC_GITHUB_ONLINE}} # from: 这里是YUQUE_TOKEN: $不能随意改
         run: |
-          hexo clean
           yuque-hexo sync || yuque-hexo sync || yuque-hexo sync  # 用 || 来重试的次数
 
       - name: 设置Git信息
         run: |
           git config --global user.name 'yxlr123' 
           git config --global user.email 'dbh2858304517@gmail.com'
+      - name: Setup Deploy Private Key
+        env:
+          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
       # 生成可访问的文档
       - name: hexo generate
         run: |
           hexo g
-
-      - name: Deploy hexo blog
-        env: 
-        # Github 仓库
-          GITHUB_REPO: github.com/yxlr123/yxlr123.github.io
-      # 将编译后的博客文件推送到指定仓库
-        run: |
-          cd ./public && git init && git add .
-          git add .
-          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force --quiet "https://${{ secrets.HEXO_DEPLOY_PRI }}@$GITHUB_REPO" blog:blog
+          hexo d
