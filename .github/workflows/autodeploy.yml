@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: "14.x"
-      - name: Setup Deploy Private Key
+      - name: Setup Deploy
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}    # 这个就是Source仓库的私钥
         run: |
@@ -36,7 +36,13 @@ jobs:
           git config --global user.name "yxlr123"
           npm install hexo-cli -g
           npm install
-      - name: Deploy
-        run: |
-            hexo g
-            hexo d
+          hexo g
+
+      - name: 部署到Github
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.TOKEN }}
+          repository-name: anzhiyu-a/anzhiyu-a.github.io
+          branch: main
+          folder: public
+          commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'
