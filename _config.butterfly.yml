@@ -55,7 +55,7 @@ algolia_search:
 local_search:
   enable: true
   preload: true
-  CDN:
+  CDN: https://cdn.yxlr.tk/gh/yxlr123/yxlr123.github.io@blog/search.xml
 
 # Math (數學)
 # --------------------------------------
@@ -79,12 +79,12 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
+favicon: https://cdn.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.staticaly.com/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
-  effect: false
+  img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
