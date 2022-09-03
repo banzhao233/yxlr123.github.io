@@ -107,7 +107,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: http://github.com/yxlr123/yxlr123.github.io.git,blog
+  repository: https://yxlr123:20081228dbh@github.com/yxlr123/yxlr123.github.io.git,blog
 
 wordcount:
   enable: true
