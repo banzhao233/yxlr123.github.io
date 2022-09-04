@@ -3,9 +3,9 @@ footer:
   theme: 主题
 
 copy:
-  success: 复制成功
+  success: 你的剪贴板被我占领了！
   error: 复制错误
-  noSupport: 浏览器不支持
+  noSupport: 你好像在使用远古浏览器(゜ロ゜) 
 
 page:
   articles: 文章总览
@@ -37,7 +37,7 @@ post:
 
 search:
   title: 搜索
-  load_data: 数据库加载中
+  load_data: 拼命加载中
   algolia_search:
     input_placeholder: 搜索文章
     hits_empty: '找不到您查询的内容：${query}'
@@ -45,7 +45,7 @@ search:
 
   local_search:
     input_placeholder: 搜索文章
-    hits_empty: '找不到您查询的内容：${query}'
+    hits_empty: '找不到您查询的内容：${query}，≥﹏≤'
 
 pagination:
   prev: 上一篇
@@ -66,7 +66,7 @@ aside:
     headline: 网站资讯
     article_name: 文章数目
     runtime:
-      name: 已运行时间
+      name: 已默默运行
       unit: 天
     last_push_date:
       name: 最后更新时间
@@ -76,7 +76,7 @@ aside:
   more_button: 查看更多
   card_newest_comments:
     headline: 最新评论
-    loading_text: 正在加载中...
+    loading_text: 拼命加载中...
     error: 无法获取评论，请确认相关配置是否正确
     zero: 没有评论
     image: 图片
@@ -91,7 +91,7 @@ date_suffix:
   day: 天前
   month: 个月前
 
-donate: 打赏
+donate: 不给糖就捣蛋(^～^)
 share: 分享
 
 rightside:
@@ -117,6 +117,6 @@ Snackbar:
   day_to_night: 你已切换为深色模式
   night_to_day: 你已切换为浅色模式
 
-loading: 加载中...
+loading: 拼命加载中...
 
-error404: 页面没有找到
+error404: 你要找的页面被黑暗吞噬了(#ﾟДﾟ)！
