@@ -193,11 +193,11 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
+    - img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/weixin.diffec28o0g.webp
+      link:
+      text: 微信
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
