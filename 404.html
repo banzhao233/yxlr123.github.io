@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-09-04 17:27:19'
+  postUpdate: '2022-09-04 18:46:17'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -209,7 +209,7 @@
   const getComment = () => {
     const loadWaline = () => {
       Waline.RecentComments({
-        serverURL: '//waline.yxlr.tk',
+        serverURL: 'https://waline.yxlr.tk',
         count: 6
       }).then(({comments}) => {
         const walineArray = comments.map(e => {
@@ -248,7 +248,7 @@
   document.addEventListener('pjax:complete', newestCommentInit)
 })</script><script src="https://use.fontawesome.com/0148c68542.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
-POWERMODE.mobile = false;
+POWERMODE.mobile = true;
 document.body.addEventListener('input', POWERMODE);
 </script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="博客,技术分享,还有摸鱼" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
   function butterfly_swiper_injector_config(){
