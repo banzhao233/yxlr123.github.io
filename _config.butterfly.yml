@@ -840,7 +840,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/static-butterfly/dist/css/index.min.css">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/static-butterfly@1.6.0/dist/css/index.min.css">
     - <link rel="stylesheet" href="/css/mycss.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
@@ -859,7 +859,7 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: custom
+  third_party_provider: jsdelivr
 
   # Add version number to CDN, true or false  
   version: false
