@@ -314,7 +314,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: //waline.yxlr.tk # Waline server address url
+  serverURL: https://waline.yxlr.tk # Waline server address url
   bg: # waline background
   pageview: false
   option:
@@ -546,7 +546,7 @@ activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
   shake: false #  open shake (抖動特效)
-  mobile: false
+  mobile: true
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
