@@ -316,7 +316,7 @@ valine:
 waline:
   serverURL: https://waline.yxlr.tk # Waline server address url
   bg: # waline background
-  pageview: false
+  pageview: true
   option:
 
 # utterances
@@ -801,7 +801,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -821,7 +821,7 @@ lazyload:
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: true
+  enable: false
   manifest: /manifest.json
   apple_touch_icon: /img/pwa/apple-touch-icon.png
   favicon_32_32: /img/pwa/favicon-32x32.png
@@ -885,7 +885,7 @@ CDN:
     # disqusjs:
     # disqusjs_css:
     # twikoo:
-    waline_js: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/waline/1.5.4/Waline.min.js
+    # waline_js: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/waline/1.5.4/Waline.min.js
     # waline_css 
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css

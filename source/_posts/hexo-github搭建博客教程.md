@@ -14,7 +14,6 @@ title: hexo+github搭建博客教程
 toc: true
 top_img: false
 updated: '2022-08-23 08:53:01'
-swiper_index: 4
 ---
 ## 前言
 

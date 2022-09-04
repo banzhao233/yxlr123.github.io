@@ -12,7 +12,6 @@ title: Markdown 基础语法
 toc: true
 top_img: false
 updated: '2022-08-23 08:52:28'
-swiper_index: 2
 ---
 ## 1.什么是Markdown
 
