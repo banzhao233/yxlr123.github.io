@@ -55,7 +55,7 @@ algolia_search:
 local_search:
   enable: true
   preload: true
-  CDN: https://cdn.yxlr.tk/gh/yxlr123/yxlr123.github.io@blog/search.xml
+  CDN:
 
 # Math (數學)
 # --------------------------------------
