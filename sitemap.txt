@@ -1,8 +1,8 @@
 https://yxlr.tk/manifest.json
 https://yxlr.tk/links/index.html
+https://yxlr.tk/tags/index.html
 https://yxlr.tk/talks/index.html
 https://yxlr.tk/tools/index.html
-https://yxlr.tk/tags/index.html
 https://yxlr.tk/about/index.html
 https://yxlr.tk/api/index.html
 https://yxlr.tk/categories/index.html

@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://yxlr.tk/tags/index.html</loc>
+    
+    <lastmod>2022-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yxlr.tk/talks/index.html</loc>
     
     <lastmod>2022-09-04</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://yxlr.tk/tools/index.html</loc>
-    
-    <lastmod>2022-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/tags/index.html</loc>
     
     <lastmod>2022-09-04</lastmod>
     
