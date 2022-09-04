@@ -611,10 +611,179 @@ code-server # 启动</code></pre>
 <p>后来官方修复了，但是国内几个节点寄了。备案还掉了≥﹏≤。</p>
 <h1>想法</h1>
 <p>我萌生了自建cdn的想法，但当我看了看网上的方法，最终选择了使用php进行反向代理</p>
-<pre class="language-php" data-language="php"><code class="language-php"></code></pre>
-<?php
-if(isset($_GET['url'])==false){die("请将参数填写完整，在当前路径后加上?url=反代的链接");}$token=(string)rand(100,99999);$ch = curl_init();curl_setopt($ch, CURLOPT_URL, $_GET['url']);curl_setopt($ch, CURLOPT_HEADER,false);curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);curl_setopt($ch, CURLOPT_FOLLOWLOCATION ,1); if(isset($_SERVER['HTTP_REFERER'])==true){curl_setopt($ch, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);}$data_down = curl_exec($ch);if($data_down  === FALSE){die("代理时发生错误");}curl_close($ch);file_put_contents($token, $data_down);header('Content-Type: '.mime_content_type($token));unlink($token);echo $data_down;?>
-<p>` ```</p>
+<pre class="language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">//代理的域名及使用的协议最后不用加/</span>
+<span class="token variable">$target_host</span><span class="token operator">=</span><span class="token string double-quoted-string">"https://fastly.jsdelivr.net"</span><span class="token punctuation">;</span>
+<span class="token comment">//处理代理的主机得到协议和主机名称</span>
+<span class="token variable">$protocal_host</span><span class="token operator">=</span><span class="token function">parse_url</span><span class="token punctuation">(</span><span class="token variable">$target_host</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//解决中文乱码</span>
+<span class="token comment">#header("Content-Type:text/html;charset=gb2312"); </span>
+<span class="token comment">//获取浏览器的的Agent</span>
+<span class="token variable">$Agent</span> <span class="token operator">=</span> <span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'HTTP_USER_AGENT'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//以.分割域名字符串</span>
+<span class="token variable">$rootdomain</span><span class="token operator">=</span><span class="token function">explode</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"."</span><span class="token punctuation">,</span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"SERVER_NAME"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//获取数组的长度</span>
+<span class="token variable">$lenth</span><span class="token operator">=</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$rootdomain</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//获取顶级域名</span>
+<span class="token variable">$top</span><span class="token operator">=</span><span class="token string double-quoted-string">"."</span><span class="token operator">.</span><span class="token variable">$rootdomain</span><span class="token punctuation">[</span><span class="token variable">$lenth</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//获取主域名</span>
+<span class="token variable">$root</span><span class="token operator">=</span><span class="token string double-quoted-string">"."</span><span class="token operator">.</span><span class="token variable">$rootdomain</span><span class="token punctuation">[</span><span class="token variable">$lenth</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//解析url参数</span>
+<span class="token keyword">function</span> <span class="token function-definition function">get_request_params</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token punctuation">&#123;</span> 
+   <span class="token variable">$url</span> <span class="token operator">=</span> <span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"REQUEST_URI"</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+   
+   <span class="token variable">$refer_url</span> <span class="token operator">=</span> <span class="token function">parse_url</span><span class="token punctuation">(</span><span class="token variable">$url</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+   
+   <span class="token variable">$params</span> <span class="token operator">=</span> <span class="token variable">$refer_url</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'query'</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+   
+   <span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$params</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+   <span class="token punctuation">&#123;</span> 
+       <span class="token variable">$paramsArr</span> <span class="token operator">=</span> <span class="token function">explode</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'&amp;'</span><span class="token punctuation">,</span><span class="token variable">$params</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+   
+       <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$paramsArr</span> <span class="token keyword">as</span> <span class="token variable">$k</span><span class="token operator">=></span><span class="token variable">$v</span><span class="token punctuation">)</span> 
+       <span class="token punctuation">&#123;</span> 
+          <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">explode</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'='</span><span class="token punctuation">,</span><span class="token variable">$v</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+          <span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$a</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$a</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+       <span class="token punctuation">&#125;</span> 
+   <span class="token punctuation">&#125;</span> 
+   <span class="token keyword">return</span> <span class="token variable">$arr</span><span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//解析HTTP响应头</span>
+<span class="token keyword">function</span> <span class="token function-definition function">parse_headers</span><span class="token punctuation">(</span><span class="token variable">$headers</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token comment">//$head = array();</span>
+	<span class="token keyword">global</span> <span class="token variable">$root</span><span class="token punctuation">,</span><span class="token variable">$top</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span> <span class="token variable">$headers</span> <span class="token keyword">as</span> <span class="token variable">$k</span><span class="token operator">=></span><span class="token variable">$v</span> <span class="token punctuation">)</span>
+    <span class="token punctuation">&#123;</span>
+        <span class="token variable">$t</span> <span class="token operator">=</span> <span class="token function">explode</span><span class="token punctuation">(</span> <span class="token string single-quoted-string">':'</span><span class="token punctuation">,</span> <span class="token variable">$v</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token keyword">isset</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token comment">//$head[ trim($t[0]) ] = trim( $t[1] );</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">strcasecmp</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Set-Cookie'</span><span class="token punctuation">,</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token comment">//处理COOkie的domain关键字</span>
+				<span class="token variable">$targetcookie</span><span class="token operator">=</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token operator">.</span><span class="token string double-quoted-string">";"</span><span class="token punctuation">;</span>
+				<span class="token variable">$res_cookie</span><span class="token operator">=</span><span class="token function">preg_replace</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"/domain=.*?;/"</span><span class="token punctuation">,</span><span class="token string double-quoted-string">"domain="</span><span class="token operator">.</span><span class="token variable">$root</span><span class="token operator">.</span><span class="token variable">$top</span><span class="token operator">.</span><span class="token string double-quoted-string">";"</span><span class="token punctuation">,</span><span class="token variable">$targetcookie</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token variable">$res_cookie</span><span class="token operator">=</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$res_cookie</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">strlen</span><span class="token punctuation">(</span><span class="token variable">$res_cookie</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+				<span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"Set-Cookie: "</span><span class="token operator">.</span><span class="token variable">$res_cookie</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">&#125;</span>
+			<span class="token keyword">elseif</span><span class="token punctuation">(</span><span class="token function">strcasecmp</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Content-Type'</span><span class="token punctuation">,</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"Content-Type: "</span><span class="token operator">.</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">&#125;</span>
+			<span class="token keyword">elseif</span><span class="token punctuation">(</span><span class="token function">strcasecmp</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Location'</span><span class="token punctuation">,</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token variable">$relocation</span><span class="token operator">=</span><span class="token function">str_replace</span><span class="token punctuation">(</span><span class="token variable">$protocal_host</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'host'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"SERVER_NAME"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"Location: "</span><span class="token operator">.</span><span class="token variable">$relocation</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">&#125;</span>
+			<span class="token keyword">elseif</span><span class="token punctuation">(</span><span class="token function">strcasecmp</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'cache-control'</span><span class="token punctuation">,</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+			
+				<span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"cache-control: "</span><span class="token operator">.</span><span class="token function">trim</span><span class="token punctuation">(</span> <span class="token variable">$t</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				
+			<span class="token keyword">else</span>
+				<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+        <span class="token comment">// else</span>
+        <span class="token comment">// &#123;</span>
+            <span class="token comment">// $head[] = $v;</span>
+            <span class="token comment">// if( preg_match( "#HTTP/[0-9\.]+\s+([0-9]+)#",$v, $out ) )</span>
+                <span class="token comment">// $head['reponse_code'] = intval($out[1]);</span>
+        <span class="token comment">// &#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span><span class="token comment">// $head;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//关系数组转换成字符串，每个键值对中间用=连接，以; 分割</span>
+<span class="token keyword">function</span> <span class="token function-definition function">array_to_str</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">)</span>  
+<span class="token punctuation">&#123;</span>  
+   <span class="token variable">$string</span><span class="token operator">=</span><span class="token string double-quoted-string">""</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">is_array</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+	<span class="token punctuation">&#123;</span>  
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$array</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=></span> <span class="token variable">$value</span><span class="token punctuation">)</span> 
+		<span class="token punctuation">&#123;</span>   
+			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$string</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+				<span class="token variable">$string</span><span class="token operator">.=</span><span class="token string double-quoted-string">"; "</span><span class="token operator">.</span><span class="token variable">$key</span><span class="token operator">.</span><span class="token string double-quoted-string">"="</span><span class="token operator">.</span><span class="token variable">$value</span><span class="token punctuation">;</span>
+			<span class="token keyword">else</span>
+				<span class="token variable">$string</span><span class="token operator">.=</span><span class="token variable">$key</span><span class="token operator">.</span><span class="token string double-quoted-string">"="</span><span class="token operator">.</span><span class="token variable">$value</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>   
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> 
+	<span class="token punctuation">&#123;</span>  
+            <span class="token variable">$string</span> <span class="token operator">=</span> <span class="token variable">$array</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">&#125;</span>      
+    <span class="token keyword">return</span> <span class="token variable">$string</span><span class="token punctuation">;</span>  
+<span class="token punctuation">&#125;</span>  
+<span class="token comment">//debug to console</span>
+<span class="token keyword">function</span> <span class="token function-definition function">debug_to_console</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">is_array</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token class-name">is_object</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">echo</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"&lt;script>console.log('PHP: "</span><span class="token operator">.</span><span class="token function">json_encode</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token operator">.</span><span class="token string double-quoted-string">"');&lt;/script>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">echo</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"&lt;script>console.log('PHP: "</span><span class="token operator">.</span><span class="token variable">$data</span><span class="token operator">.</span><span class="token string double-quoted-string">"');&lt;/script>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//组装HTTP请求头</span>
+<span class="token variable">$opts</span><span class="token operator">=</span><span class="token string double-quoted-string">""</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'REQUEST_METHOD'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token string single-quoted-string">'POST'</span><span class="token punctuation">)</span> 
+<span class="token punctuation">&#123;</span>
+	<span class="token variable">$postdata</span><span class="token operator">=</span><span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"php://input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token variable">$opts</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span>
+	<span class="token string single-quoted-string">'http'</span><span class="token operator">=></span><span class="token keyword">array</span><span class="token punctuation">(</span>
+	<span class="token string single-quoted-string">'method'</span><span class="token operator">=></span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'REQUEST_METHOD'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string single-quoted-string">'content'</span><span class="token operator">=></span><span class="token variable">$postdata</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'header'</span><span class="token operator">=></span><span class="token string double-quoted-string">"Accept-language: zh-CN\r\n"</span> <span class="token operator">.</span>   <span class="token comment">//可以使用客户端浏览器的$_SERVER['HTTP_ACCEPT_LANGUAGE</span><span class="token string single-quoted-string">']
+			  "user-agent: '</span><span class="token variable">$Agent</span><span class="token string single-quoted-string">'"."\r\n".
+			  "Cookie: ".array_to_str($_COOKIE)."\r\n".
+			  //"Accept-Encoding: gzip, deflate, sdch\r\n".
+			  "Content-Type: ".$_SERVER['</span><span class="token constant">CONTENT_TYPE</span><span class="token string single-quoted-string">']
+			 
+		)
+	);
+	&#125;
+else
+&#123;
+	$opts = array(
+	'</span>http<span class="token string single-quoted-string">'=>array(
+	'</span>method<span class="token string single-quoted-string">'=>$_SERVER['</span><span class="token constant">REQUEST_METHOD</span><span class="token string single-quoted-string">'],
+    '</span>header<span class="token string single-quoted-string">'=>"Accept-language: zh-CN\r\n" .
+			  "user-agent: '</span><span class="token variable">$Agent</span><span class="token string single-quoted-string">'"."\r\n".
+			  //"Accept-Encoding: gzip, deflate, sdch\r\n".
+			  "Cookie: ".array_to_str($_COOKIE)
+		)
+	);
+	
+&#125;
+//
+$context = stream_context_create($opts);
+//发送请求
+$new_request_uri = "";
+$path_script  = pathinfo($_SERVER["PHP_SELF"]);
+//
+if ($path_script['</span>dirname<span class="token string single-quoted-string">']!="/") &#123;
+	$new_request_uri = substr_replace($_SERVER["REQUEST_URI"],"",strpos($_SERVER["REQUEST_URI"],$path_script['</span>dirname<span class="token string single-quoted-string">']),strlen($path_script['</span>dirname<span class="token string single-quoted-string">']));
+&#125; else &#123;
+	$new_request_uri = $_SERVER["REQUEST_URI"];
+&#125;
+$homepage = file_get_contents($protocal_host['</span>scheme<span class="token string single-quoted-string">']."://".$protocal_host['</span>host<span class="token string single-quoted-string">'].$new_request_uri,false,$context);
+//处理file_get_contents返回的响应求头
+parse_headers($http_response_header);
+//替换域名并输出网页
+$homepage=str_replace($protocal_host['</span>host'<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"SERVER_NAME"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">$homepage</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//输出网页内容</span>
+<span class="token keyword">echo</span> <span class="token variable">$homepage</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?></span></span></code></pre>
+<p>然后配置伪静态(Apache)</p>
+<pre class="language-none"><code class="language-none">RewriteEngine on
+RewriteBase &#x2F;
+RewriteCond $1 ^(index\.php)?$ [OR]
+RewriteCond %&#123;REQUEST_FILENAME&#125; -f [OR]
+RewriteCond %&#123;REQUEST_FILENAME&#125; -d [OR]
+RewriteCond %&#123;REQUEST_FILENAME&#125;  ^index\.php?$
+RewriteRule ^(.*)$ - [S&#x3D;1]
+RewriteRule . &#x2F;index.php [L]</code></pre>
+<blockquote>
+<p>使用方法和jsdelivr一样，我搭建的地址：<a href="https://cdn.yxlr.tk">https://cdn.yxlr.tk</a></p>
+</blockquote>
 ]]></content>
       <categories>
         <category>cdn</category>
