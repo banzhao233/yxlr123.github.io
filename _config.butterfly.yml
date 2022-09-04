@@ -4,9 +4,10 @@
 
 menu:
   主页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  文章||fas fa-books：
+    时间轴: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
   博客曰志: /talks/ || fas fa-book
   工具||fas fa-toolbox:
     API: /api/ || fas fa-link
