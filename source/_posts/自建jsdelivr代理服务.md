@@ -2,7 +2,7 @@
 abbrlink: 7db9c141
 categories:
   - cdn
-cover: http://imgsrc.baidu.com/super/pic/item/0dd7912397dda144aab0796cf7b7d0a20df486b6.jpg
+cover: https://imgsrc.baidu.com/super/pic/item/0dd7912397dda144aab0796cf7b7d0a20df486b6.jpg
 date: '2022-09-03 13:22:47'
 description: 使用php搭建jsdelivr代理
 keywords: 自建jsdelivr加速
