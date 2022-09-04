@@ -138,7 +138,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 500
+  limit: 600
   content: true
 
 # APlayer
