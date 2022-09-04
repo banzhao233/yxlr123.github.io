@@ -605,10 +605,16 @@ code-server # 启动</code></pre>
   <entry>
     <title>自建jsdelivr反代服务</title>
     <url>/post/7db9c141.html</url>
-    <content><![CDATA[<h2 id="起因">起因</h2>
+    <content><![CDATA[<h1>起因</h1>
 <p>在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。</p>
 <p><img src="/img/loading.gif" data-original="http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
-<p>后来</p>
+<p>后来官方修复了，但是国内几个节点寄了。备案还掉了≥﹏≤。</p>
+<h1>想法</h1>
+<p>我萌生了自建cdn的想法，但当我看了看网上的方法，最终选择了使用php进行反向代理</p>
+<pre class="language-php" data-language="php"><code class="language-php"></code></pre>
+<?php
+if(isset($_GET['url'])==false){die("请将参数填写完整，在当前路径后加上?url=反代的链接");}$token=(string)rand(100,99999);$ch = curl_init();curl_setopt($ch, CURLOPT_URL, $_GET['url']);curl_setopt($ch, CURLOPT_HEADER,false);curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);curl_setopt($ch, CURLOPT_FOLLOWLOCATION ,1); if(isset($_SERVER['HTTP_REFERER'])==true){curl_setopt($ch, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);}$data_down = curl_exec($ch);if($data_down  === FALSE){die("代理时发生错误");}curl_close($ch);file_put_contents($token, $data_down);header('Content-Type: '.mime_content_type($token));unlink($token);echo $data_down;?>
+<p>` ```</p>
 ]]></content>
       <categories>
         <category>cdn</category>
