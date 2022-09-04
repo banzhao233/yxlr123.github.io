@@ -85,7 +85,7 @@ favicon: https://cdn.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
 # Avatar (頭像)
 avatar:
   img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
-  effect: true
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
