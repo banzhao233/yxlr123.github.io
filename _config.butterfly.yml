@@ -779,9 +779,10 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
-     - /no-pjax/
+     - /links/
+     - /talks/
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
