@@ -873,8 +873,8 @@ CDN:
 
   option:
     # main_css: 
-    # main:
-    # utils:
+    main: http://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/main.js
+    utils: http://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/utils.js
     translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search:
     # algolia_js:
