@@ -1,5 +1,5 @@
 @font-face {
   font-family: 'ZCOOL KuaiLe';
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/yxlr123/yxlr123.github.io@main/ZCOOLKuaiLe-Regular.ttf') format("truetype");
+  src: url('/font/ZCOOLKuaiLe-Regular.ttf') format("truetype");
 }
