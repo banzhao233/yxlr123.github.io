@@ -878,7 +878,7 @@ CDN:
     main: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/main.js
     utils: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/utils.js
     translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
-    # local_search:
+    local_search: https://npm.elemecdn.com/hexo-theme-butterfly@latest/source/js/search/local-search.js
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:
