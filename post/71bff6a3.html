@@ -239,7 +239,7 @@ code-server # 启动</code></pre>
   function insertCSS () {
     const link = document.createElement("link")
     link.rel = "stylesheet"
-    link.href = "https://cdn.yxlr.tk/npm/@waline/client@2.7.0/dist/waline.css"
+    link.href = "https://npm.elemecdn.com/@waline/client@latest/dist/waline.css"
     document.head.appendChild(link)
   }
 
@@ -257,7 +257,7 @@ code-server # 启动</code></pre>
   if (typeof Waline === 'function') initWaline()
   else {
     insertCSS()
-    getScript('https://cdn.yxlr.tk/npm/@waline/client@latest/dist/waline.js').then(initWaline)
+    getScript('https://npm.elemecdn.com/@waline/client@latest/dist/waline.js').then(initWaline)
   }
 }
 
@@ -334,7 +334,7 @@ if ('Waline' === 'Waline' || !false) {
     }
 
     if (typeof Waline === 'function') loadWaline() 
-    else getScript('https://cdn.yxlr.tk/npm/@waline/client@latest/dist/waline.js').then(loadWaline)
+    else getScript('https://npm.elemecdn.com/@waline/client@latest/dist/waline.js').then(loadWaline)
   }
 
   const newestCommentInit = () => {
