@@ -23,7 +23,7 @@
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/62fb3293b1633c3ed4a3783127f9d02d.jpeg" alt="方法一"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/62fb3293b1633c3ed4a3783127f9d02d.jpeg" alt="方法一"></p>
 <h3 id="方法二：在文字前面插入-号，内容前面要有空格与-隔开：">方法二：在文字前面插入<code>#</code>号，内容前面要有空格与<code>#</code>隔开：</h3>
 <pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
 <span class="token title important"><span class="token punctuation">##</span> 二级标题</span>
@@ -34,7 +34,7 @@
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt="方法二"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt="方法二"></p>
 <hr>
 <h2 id="3-段落">3.段落</h2>
 <blockquote>
@@ -78,7 +78,7 @@
 __________
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span></code></pre>
 <p>输出结果：<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/b27aeb1539ec9fc8b1ecf80e65f44ec2.png" alt="分割线"></p>
+<img src="https://pic.rmb.bdstatic.com/bjh/b27aeb1539ec9fc8b1ecf80e65f44ec2.png" alt="分割线"></p>
 <hr>
 <h2 id="6-列表">6.列表</h2>
 <blockquote>
@@ -101,7 +101,7 @@ __________
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/93bda90ffe4af9ad5ed5e6b844c0f1b6.jpeg" alt="列表"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/93bda90ffe4af9ad5ed5e6b844c0f1b6.jpeg" alt="列表"></p>
 <blockquote>
 <p>列表嵌套写法：直接在第二行按Tab键或按四下空格缩进一下即可。</p>
 </blockquote>
@@ -114,7 +114,7 @@ __________
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/ef6305325bdccebe5540cd2d87df29cd.jpeg" alt="嵌套写法"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/ef6305325bdccebe5540cd2d87df29cd.jpeg" alt="嵌套写法"></p>
 <hr>
 <h2 id="7-引用区块">7.引用区块</h2>
 <blockquote>
@@ -122,13 +122,13 @@ __________
 </blockquote>
 <pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 文本内容</code></pre>
 <p>输出结果：<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/a5070f4115d23a2cd545bfd4820e1560.jpeg" alt="区块"></p>
+<img src="https://pic.rmb.bdstatic.com/bjh/a5070f4115d23a2cd545bfd4820e1560.jpeg" alt="区块"></p>
 <hr>
 <h2 id="8-代码块">8.代码块</h2>
 <blockquote>
 <p>可使用三个<kbd>`</kbd>符号包裹住代码块，并指定一种语言即可生成代码预览区域。此符号一定要在英文状态下才能打出。</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/dc77b136ea98b7d74942c123d1c3eeaa.jpeg" alt="代码块"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/dc77b136ea98b7d74942c123d1c3eeaa.jpeg" alt="代码块"></p>
 <blockquote>
 <p>如果在文字行内插入代码块，可以在代码前后分别插入一个<kbd>`</kbd>符号即可。</p>
 </blockquote>
@@ -159,7 +159,7 @@ __________
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度"></p>
+<p><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度"></p>
 <blockquote>
 <p>第二种方法</p>
 </blockquote>
@@ -225,7 +225,7 @@ __________
 <blockquote>
 <p>输出结果：</p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt=""></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/609cc44b9a9df01da5c84541df3a72db.jpeg" alt=""></p>
 <blockquote>
 <p>可以去查阅Html的文档了解更多：<a href="https://www.runoob.com/html/">菜鸟教程-HTML文档</a></p>
 </blockquote>
@@ -235,7 +235,7 @@ __________
 <p>如果在输出以下字符无法正常输出,可在字符前面加上反斜杠<code>\</code>符号。<br>
 例如我想正常输出” * “号，且不会被识别成格式控制符号，可以写为<code>\*</code></p>
 </blockquote>
-<p><img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/ffc6988469caceefb6927763a11af2f7.jpeg" alt="转义字符表"></p>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/ffc6988469caceefb6927763a11af2f7.jpeg" alt="转义字符表"></p>
 <blockquote>
 <p>竖线比较特殊，在markdown的表格内不能直接用反斜杠<code>\|</code>转义，可使用html的字符代码<code>&amp;#124;</code>代替。</p>
 </blockquote>
@@ -301,13 +301,13 @@ cd MyBlog</code></pre>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">hexo g &amp;&amp; hexo s</code></pre>
 <p>用浏览器打开<a href="http://localhost:4000/">http://localhost:4000/</a><br>
 看到如下图就是成功了<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/9f4a6a09b5b3f6516668ab45827cc574.png" alt="效果"><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/9f4a6a09b5b3f6516668ab45827cc574.png" alt="效果"><br>
 按<code>ctrl+c</code>关闭本地服务器。</p>
 <h2 id="GitHub配置">GitHub配置</h2>
 <h3 id="注册Github账号创建个人仓库">注册Github账号创建个人仓库</h3>
 <p>接下来就去注册一个<code>github</code>账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。<br>
 打开<a href="https://github.com/">https://github.com/</a>，新建一个项目仓库<code>New repository</code>，如下所示：<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/ba46323db6dbccc9d1f923e2569daa92.jpeg" alt="github配置"><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/ba46323db6dbccc9d1f923e2569daa92.jpeg" alt="github配置"><br>
 然后如上图所示，输入自己的账号名字，后面一定要加.github.io后缀，README初始化也要勾。</p>
 <h3 id="生成SSH添加到GitHub">生成SSH添加到GitHub</h3>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">git config --global user.name &quot;yourname&quot;
@@ -326,7 +326,7 @@ git config user.email</code></pre>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">cat &#x2F;root&#x2F;.ssh&#x2F;id_rsa.pub</code></pre>
 <p>将输出的内容复制下来<br>
 打开<a href="github.com">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。如图：<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/56792662574ff820a5e50244c9324cf9.png" alt="ssh_keys"><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/56792662574ff820a5e50244c9324cf9.png" alt="ssh_keys"><br>
 然后再输入下面内容：</p>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">ssh -T git@github.com</code></pre>
 <p>出现你的用户名，那就成功了。</p>
@@ -349,7 +349,7 @@ hexo d</code></pre>
 <p>注意<code>hexo d</code>时可能要你输入<code>username</code>和<code>password</code>。</p>
 </blockquote>
 <p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io">http://yourname.github.io</a> 这个网站看到你的博客了！！<br>
-<img src="/img/loading.gif" data-original="https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png" alt="部署成功"></p>
+<img src="https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png" alt="部署成功"></p>
 <h2 id="写文章、发布文章">写文章、发布文章</h2>
 <p>新建一篇文章输入：</p>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">hexo new post &quot;article title&quot;</code></pre>
@@ -398,7 +398,7 @@ pretty_urls:
   <entry>
     <title>【源码分享】html 3D魔方</title>
     <url>/post/f9fe76d9.html</url>
-    <content><![CDATA[<p><img src="/img/loading.gif" data-original="http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg" alt=""></p>
+    <content><![CDATA[<p><img src="http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg" alt=""></p>
 <h3 id="源码介绍">源码介绍</h3>
 <p>使用<code>html</code>+<code>css</code>+<code>js</code>实现的魔方小游戏，可用于404错误页面。</p>
 <h3 id="演示">演示</h3>
@@ -427,7 +427,7 @@ pretty_urls:
     <content><![CDATA[<h2 id="前言-2">前言</h2>
 <p>最近因为一些原因，我没法折腾电脑了。<br>
 但我怎么能闲着呢，于是我准备对手机下手。<br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/xxx.3t1cwfsq6o00.webp?raw=true" alt="Termux"><br>
+<img src="https://git.poker/yxlr123/imges/blob/main/xxx.3t1cwfsq6o00.webp?raw=true" alt="Termux"><br>
 折腾安卓，当然要用<code>Termux</code>了，因为它有丰富的软件包。<br>
 Termux的下载地址： <a href="https://f-droid.org/en/packages/com.termux/">传送门</a></p>
 <hr>
@@ -445,12 +445,12 @@ apt update &amp;&amp; apt upgrade</code></pre>
 <p>全程<code>y</code>回车即可</p>
 </blockquote>
 <p>如果你需要更换其它源，可以执行<code>termux-change-repo</code>，然后使用自带方向键选择你需要更换的软件源。同样全程<code>y</code>回车即可。<br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/xxx.gdiqdmw8few.webp?raw=true" alt="更换软件源"></p>
+<img src="https://git.poker/yxlr123/imges/blob/main/xxx.gdiqdmw8few.webp?raw=true" alt="更换软件源"></p>
 <hr>
 <h2 id="2-安装code-server失败">2.安装code-server<em>失败</em></h2>
 <p>因为要做python开发，<s>如果使用<code>vim</code>来编写，属实是有些蛋疼。</s><br>
 我想起了以前在服务器上使用<code>code-server</code>是多么的爽，完美解决了没有图形化界面的痛。<br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/xxx.yjtai7jp1sw.webp?raw=true" alt="code-server"><br>
+<img src="https://git.poker/yxlr123/imges/blob/main/xxx.yjtai7jp1sw.webp?raw=true" alt="code-server"><br>
 先安装<code>nodejs</code>(<code>pkg install nodejs</code>)，然后运行安装脚本，结果报错了！ 真让人头疼。</br><br>
 之后又尝试了使用<code>npm</code>安装，结果可想而知，还是报错(<em>≧ｍ≦</em>) </br><br>
 安装<code>code-server</code>失败，我分析了以下两种原因：</p>
@@ -468,7 +468,7 @@ apt update &amp;&amp; apt upgrade</code></pre>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">git clone https:&#x2F;&#x2F;github.com&#x2F;sqlsec&#x2F;termux-install-linux
 cd termux-install-linux
 python termux-linux-install.py</code></pre>
-<p><img src="/img/loading.gif" data-original="https://cdn.staticaly.com/gh/yxlr123/imges@main/xxx.2ln4mi0q0e60.webp" alt=""><br>
+<p><img src="https://cdn.staticaly.com/gh/yxlr123/imges@main/xxx.2ln4mi0q0e60.webp" alt=""><br>
 我这里安装的是Ubuntu。</p>
 <p>启动<code>proot</code>容器</p>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">cd ~&#x2F;Termux-Linux&#x2F;Ubuntu
@@ -482,13 +482,13 @@ sudo apt install nodejs</code></pre>
 <pre class="language-none"><code class="language-none">curl -fsSL https:&#x2F;&#x2F;code-server.dev&#x2F;install.sh | sh -s -- --dry-run # 安装
 code-server # 启动</code></pre>
 <p>终于成功了<br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/yxlr.3eww1rc64f60.webp?raw=true" alt=""><br>
+<img src="https://git.poker/yxlr123/imges/blob/main/yxlr.3eww1rc64f60.webp?raw=true" alt=""><br>
 先按<kbd>Ctrl</kbd>+<kbd>c</kbd>关闭。<br>
 <code>vim ~/.config/code-server/config.yaml</code><br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/yxlr.5xufa6xsr6k0.webp?raw=true" alt=""><br>
+<img src="https://git.poker/yxlr123/imges/blob/main/yxlr.5xufa6xsr6k0.webp?raw=true" alt=""><br>
 更改密码，再按<kbd>ESC</kbd>键输入<code>:wq</code>保存。<br>
-再次启动<code>code-server</code>，使用浏览器打开对应的地址<img class="inline-img" src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/xxx.745yhnn2rm80.webp?raw=true" style="height:50px"/>，输入设置的密码，就可以开始使用了。<br>
-<img src="/img/loading.gif" data-original="https://git.poker/yxlr123/imges/blob/main/yxlr.1gnxv8a3v5r4.webp?raw=true" alt=""></p>
+再次启动<code>code-server</code>，使用浏览器打开对应的地址<img class="inline-img" src="https://git.poker/yxlr123/imges/blob/main/xxx.745yhnn2rm80.webp?raw=true" style="height:50px"/>，输入设置的密码，就可以开始使用了。<br>
+<img src="https://git.poker/yxlr123/imges/blob/main/yxlr.1gnxv8a3v5r4.webp?raw=true" alt=""></p>
 ]]></content>
       <categories>
         <category>折腾记录</category>
@@ -513,7 +513,7 @@ code-server # 启动</code></pre>
 <p>这种方案最简单，有后端，支持自定义主题和插件，但有一定的成本（需要服务器和域名）</br><br>
 种类较多，简单地说三个比较热门的。</p>
 <div class="tabs" id="php博客系统"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#php博客系统-1">WordPress</button></li><li class="tab"><button type="button" data-href="#php博客系统-2">Z-Blog</button></li><li class="tab"><button type="button" data-href="#php博客系统-3">Typecho</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="php博客系统-1"><p>官网传送门：<a href="https://cn.wordpress.org/">WordPress</a><br>
-<img src="/img/loading.gif" data-original="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/screenshot_20190904_000917-1024x486.png" alt="wordpress"></p>
+<img src="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/screenshot_20190904_000917-1024x486.png" alt="wordpress"></p>
 <blockquote>
 <p>优点</p>
 </blockquote>
@@ -524,7 +524,7 @@ code-server # 启动</code></pre>
 <p>不易操作，过于臃肿，体积大。</br><br>
 目前已经开始没落了，使用量不断减少。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="php博客系统-2"><p>属实是万年老二了。<br>
 官网传送门：<a href="https://www.zblogcn.com/">Z-Blog</a><br>
-<img src="/img/loading.gif" data-original="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/1255423131-0.jpg" alt="Z-Blog"></p>
+<img src="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/1255423131-0.jpg" alt="Z-Blog"></p>
 <blockquote>
 <p>优点</p>
 </blockquote>
@@ -533,7 +533,7 @@ code-server # 启动</code></pre>
 <p>缺点</p>
 </blockquote>
 <p>插件和主题没有wordpress丰富，但够用。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="php博客系统-3"><p>官网传送门：<a href="https://typecho.org/">Typecho</a><br>
-<img src="/img/loading.gif" data-original="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/st1.png" alt="Typecho"></p>
+<img src="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/st1.png" alt="Typecho"></p>
 <blockquote>
 <p>优点</p>
 </blockquote>
@@ -548,8 +548,8 @@ code-server # 启动</code></pre>
 如果你是100%纯小白，不推荐使用此方案。</p>
 <h2 id="一些开源的博客系统">一些开源的博客系统</h2>
 <p>比如<a href="https://docs.zhyd.me/">OneBlog</a><br>
-<img src="/img/loading.gif" data-original="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/d1ce53ff.png" alt="OneBlog后台"><br>
-<img src="/img/loading.gif" data-original="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/dce49a8b.png" alt="OneBlog主页"><br>
+<img src="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/d1ce53ff.png" alt="OneBlog后台"><br>
+<img src="https://img.yxlr.tk/file/myblogyxlr/img/%E6%96%87%E7%AB%A0/dce49a8b.png" alt="OneBlog主页"><br>
 配置较为简单。本人没有深度使用过，就不做出评价了。</p>
 <h2 id="自己进行搭建">自己进行搭建</h2>
 <p>如果你有一定的编程基础，可以尝试用<code>Django</code>等框架进行开发。</p>
@@ -607,7 +607,7 @@ code-server # 启动</code></pre>
     <url>/post/7db9c141.html</url>
     <content><![CDATA[<h1>起因</h1>
 <p>在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。</p>
-<p><img src="/img/loading.gif" data-original="http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
 <p>后来官方修复了，但是国内几个节点寄了。备案还掉了≥﹏≤。</p>
 <h1>想法</h1>
 <p>我萌生了自建cdn的想法，但当我看了看网上的方法，最终选择了使用php进行反向代理</p>
