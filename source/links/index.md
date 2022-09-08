@@ -1,11 +1,11 @@
 ---
 date: 2022-08-16 04:06:39
 title: 友链
-updated: 2022-09-04 09:35:37
+updated: 2022-09-08 10:43:59
 ---
 <div id="qexo-friends"></div>
-<link rel="stylesheet" href="https://cdn.yxlr.tk/npm/qexo-static@1.1.3/hexo/friends/friends.css"/>
-<script data-pjax src="https://cdn.yxlr.tk/npm/qexo-static@1.1.3/hexo/friends/friends.js"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/qexo-static@1.1.3/hexo/friends/friends.css"/>
+<script data-pjax src="https://npm.elemecdn.com/qexo-static@1.1.3/hexo/friends/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "https://admin-yxlr.tk")</script>
 
 在下方留言，咱交换一下友链（如果你愿意的话 (｡･∀･)ﾉﾞ），按如下格式提供信息：
