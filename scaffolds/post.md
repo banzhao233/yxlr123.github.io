@@ -8,4 +8,6 @@ keywords:
 description: 描述
 top_img:
 cover:
+toc: true
+katex: false
 ---
