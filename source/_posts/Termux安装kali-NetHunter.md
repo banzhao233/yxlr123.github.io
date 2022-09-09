@@ -14,18 +14,18 @@ date: 2022-09-09 04:38:09
 updated:
 toc: true
 ---
-# Kali NetHunter介绍
+## Kali NetHunter介绍
 Kali NetHunter是一个基于kali linux的安卓渗透平台，完全开源、免费，基于`Termux`。</br>
 官方安装及使用文档： <https://www.kali.org/docs/nethunter/nethunter-rootless/>
 
 > 友情提醒： 因为有图形化界面，安装后软件大小达到了惊人的10GB+，后续安装一些软件包，直奔15GB。
 
 ---
-# 效果展示
+## 效果展示
 <iframe height=100% width=100% src="//player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ---
-# 安装过程
+## 安装过程
 在Termux中执行以下命令
 ``` Bash
 # 申请存储访问权限
@@ -54,11 +54,11 @@ chmod +x install-nethunter-termux
 ![](http://imgsrc.baidu.com/super/pic/item/c2cec3fdfc039245f6ecbcd1c294a4c27c1e2596.jpg)
 
 ---
-# 基本命令([参考文章](https://www.sqlsec.com/2018/05/termux.html#%E5%AE%89%E8%A3%85-Kali-NetHunter))
+## 基本命令([参考文章](https://www.sqlsec.com/2018/05/termux.html#%E5%AE%89%E8%A3%85-Kali-NetHunter))
 
 ![命令说明](http://imgsrc.baidu.com/super/pic/item/9c16fdfaaf51f3de500de4bad1eef01f3b2979b5.jpg)
 
-# 图形化界面
+## 图形化界面
 先执行`nh kex`(第一次需要设置密码)
 ![](http://imgsrc.baidu.com/super/pic/item/42a98226cffc1e17de36d1ef0f90f603728de967.jpg)
 
