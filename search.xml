@@ -301,32 +301,32 @@ chmod +x install-nethunter-termux
 在第二步时如果卡住，可以替换为<code>wget -O install-nethunter-termux https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/raw/master/nethunter-rootless/install-nethunter-termux</code></p>
 </div>
 <p>如果顺利的话，你就开始安装了<br>
-<img src="http://imgsrc.baidu.com/super/pic/item/9f510fb30f2442a7e205a07b9443ad4bd01302e0.jpg" alt=""></p>
+<img src="https://imgsrc.baidu.com/super/pic/item/9f510fb30f2442a7e205a07b9443ad4bd01302e0.jpg" alt=""></p>
 <blockquote>
 <p>因为资源包较大(1GB+)，可以开着网络代理，提高效率和成功率。</p>
 </blockquote>
 <p>如果安装失败，需要删除下载的资源包，再次执行安装脚本。</p>
 <blockquote>
 <p>安装成功的效果图如下：<br>
-<img src="http://imgsrc.baidu.com/super/pic/item/c2cec3fdfc039245f6ecbcd1c294a4c27c1e2596.jpg" alt=""></p>
+<img src="https://imgsrc.baidu.com/super/pic/item/c2cec3fdfc039245f6ecbcd1c294a4c27c1e2596.jpg" alt=""></p>
 </blockquote>
 <hr>
 <h2 id="基本命令-参考文章">基本命令(<a href="https://www.sqlsec.com/2018/05/termux.html#%E5%AE%89%E8%A3%85-Kali-NetHunter">参考文章</a>)</h2>
-<p><img src="http://imgsrc.baidu.com/super/pic/item/9c16fdfaaf51f3de500de4bad1eef01f3b2979b5.jpg" alt="命令说明"></p>
+<p><img src="https://imgsrc.baidu.com/super/pic/item/9c16fdfaaf51f3de500de4bad1eef01f3b2979b5.jpg" alt="命令说明"></p>
 <h2 id="图形化界面">图形化界面</h2>
 <p>先执行<code>nh kex</code>(第一次需要设置密码)<br>
-<img src="http://imgsrc.baidu.com/super/pic/item/42a98226cffc1e17de36d1ef0f90f603728de967.jpg" alt=""></p>
+<img src="https://imgsrc.baidu.com/super/pic/item/42a98226cffc1e17de36d1ef0f90f603728de967.jpg" alt=""></p>
 <blockquote>
 <p>可以看到，我的端口号为<code>5901</code></p>
 </blockquote>
 <p>vnc连接软件可以使用kali官方的NetHunter-KeX，但操作起来不方便。</p>
 <p>我使用的是手机端的<a href="https://f-droid.org/zh_Hans/packages/com.gaurav.avnc/">AVNC</a></p>
 <p>然后使用VNC连接(端口和密码要正确)<br>
-<img src="http://imgsrc.baidu.com/super/pic/item/f603918fa0ec08fad2824e791cee3d6d54fbda6a.jpg" alt=""></p>
+<img src="https://imgsrc.baidu.com/super/pic/item/f603918fa0ec08fad2824e791cee3d6d54fbda6a.jpg" alt=""></p>
 <blockquote>
 <p>效果图</p>
 </blockquote>
-<p><img src="http://imgsrc.baidu.com/super/pic/item/472309f790529822e3ed641d92ca7bcb0b46d416.jpg" alt="VNC图形化界面"></p>
+<p><img src="https://imgsrc.baidu.com/super/pic/item/472309f790529822e3ed641d92ca7bcb0b46d416.jpg" alt="VNC图形化界面"></p>
 ]]></content>
       <categories>
         <category>教程</category>
