@@ -1,15 +1,17 @@
 ---
 title: Termux安装kali-NetHunter
 description: Termux安装kali的官方方法
-date: 2022-09-09 04:38:09
-updated:
 tags:
   - Termux
   - kali
 categories: 教程
 keywords: Termux安装kali的官方方法
 top_img: false
-cover: http://imgsrc.baidu.com/super/pic/item/30adcbef76094b36652c4933e6cc7cd98c109db6.jpg
+cover: >-
+  http://imgsrc.baidu.com/super/pic/item/30adcbef76094b36652c4933e6cc7cd98c109db6.jpg
+abbrlink: 161d4b0f
+date: 2022-09-09 04:38:09
+updated:
 ---
 # Kali NetHunter介绍
 Kali NetHunter是一个基于kali linux的安卓渗透平台，完全开源、免费，基于`Termux`。</br>
@@ -19,7 +21,7 @@ Kali NetHunter是一个基于kali linux的安卓渗透平台，完全开源、�
 
 ---
 # 效果展示
-<iframe height=100% width=100% src="//player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+{% bilibili 826399423 %}
 
 ---
 # 安装过程
