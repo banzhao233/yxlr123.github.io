@@ -9,8 +9,31 @@
     <atom:link href="https://yxlr.tk/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>分享与收获</description>
-    <pubDate>Sun, 04 Sep 2022 00:46:16 GMT</pubDate>
+    <pubDate>Fri, 09 Sep 2022 06:44:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Termux安装kali-NetHunter</title>
+      <link>https://yxlr.tk/post/161d4b0f.html</link>
+      <guid>https://yxlr.tk/post/161d4b0f.html</guid>
+      <pubDate>Thu, 08 Sep 2022 20:38:09 GMT</pubDate>
+      
+      <description>Termux安装kali的官方方法</description>
+      
+      
+      
+      
+      <category domain="https://yxlr.tk/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://yxlr.tk/tags/Termux/">Termux</category>
+      
+      <category domain="https://yxlr.tk/tags/kali/">kali</category>
+      
+      
+      <comments>https://yxlr.tk/post/161d4b0f.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>自建jsdelivr反代服务</title>
@@ -74,9 +97,9 @@
       <category domain="https://yxlr.tk/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/">折腾记录</category>
       
       
-      <category domain="https://yxlr.tk/tags/%E5%AE%89%E5%8D%93/">安卓</category>
-      
       <category domain="https://yxlr.tk/tags/Termux/">Termux</category>
+      
+      <category domain="https://yxlr.tk/tags/%E5%AE%89%E5%8D%93/">安卓</category>
       
       <category domain="https://yxlr.tk/tags/%E6%8A%98%E8%85%BE/">折腾</category>
       

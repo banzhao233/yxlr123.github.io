@@ -2,6 +2,7 @@ https://yxlr.tk/links/index.html
 https://yxlr.tk/tags/index.html
 https://yxlr.tk/talks/index.html
 https://yxlr.tk/tools/index.html
+https://yxlr.tk/post/161d4b0f.html
 https://yxlr.tk/about/index.html
 https://yxlr.tk/api/index.html
 https://yxlr.tk/categories/index.html
@@ -13,13 +14,14 @@ https://yxlr.tk/post/aa65a614.html
 https://yxlr.tk/post/8513d0f8.html
 https://yxlr.tk/
 https://yxlr.tk/tags/Markdown/
+https://yxlr.tk/tags/Termux/
+https://yxlr.tk/tags/kali/
 https://yxlr.tk/tags/hexo/
 https://yxlr.tk/tags/web/
 https://yxlr.tk/tags/%E6%95%99%E7%A8%8B/
 https://yxlr.tk/tags/html/
 https://yxlr.tk/tags/%E6%BA%90%E7%A0%81/
 https://yxlr.tk/tags/%E5%AE%89%E5%8D%93/
-https://yxlr.tk/tags/Termux/
 https://yxlr.tk/tags/%E6%8A%98%E8%85%BE/
 https://yxlr.tk/tags/%E8%AE%B0%E5%BD%95/
 https://yxlr.tk/tags/%E5%8D%9A%E5%AE%A2/
