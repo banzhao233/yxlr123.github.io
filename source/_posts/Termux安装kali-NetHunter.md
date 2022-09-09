@@ -22,7 +22,7 @@ Kali NetHunter是一个基于kali linux的安卓渗透平台，完全开源、�
 
 ---
 ## 效果展示
-<iframe height=100% width=100% src="https//player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe height=100% width=100% src="https://player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ---
 ## 安装过程
