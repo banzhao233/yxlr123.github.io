@@ -275,17 +275,17 @@ $$</code></pre>
   <entry>
     <title>Termux安装kali-NetHunter</title>
     <url>/post/161d4b0f.html</url>
-    <content><![CDATA[<h1>Kali NetHunter介绍</h1>
+    <content><![CDATA[<h2 id="Kali-NetHunter介绍">Kali NetHunter介绍</h2>
 <p>Kali NetHunter是一个基于kali linux的安卓渗透平台，完全开源、免费，基于<code>Termux</code>。</br><br>
 官方安装及使用文档： <a href="https://www.kali.org/docs/nethunter/nethunter-rootless/">https://www.kali.org/docs/nethunter/nethunter-rootless/</a></p>
 <blockquote>
 <p>友情提醒： 因为有图形化界面，安装后软件大小达到了惊人的10GB+，后续安装一些软件包，直奔15GB。</p>
 </blockquote>
 <hr>
-<h1>效果展示</h1>
+<h2 id="效果展示">效果展示</h2>
 <iframe height=100% width=100% src="//player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 <hr>
-<h1>安装过程</h1>
+<h2 id="安装过程">安装过程</h2>
 <p>在Termux中执行以下命令</p>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash"># 申请存储访问权限
 termux-setup-storage
@@ -311,9 +311,9 @@ chmod +x install-nethunter-termux
 <img src="http://imgsrc.baidu.com/super/pic/item/c2cec3fdfc039245f6ecbcd1c294a4c27c1e2596.jpg" alt=""></p>
 </blockquote>
 <hr>
-<h1>基本命令(<a href="https://www.sqlsec.com/2018/05/termux.html#%E5%AE%89%E8%A3%85-Kali-NetHunter">参考文章</a>)</h1>
+<h2 id="基本命令-参考文章">基本命令(<a href="https://www.sqlsec.com/2018/05/termux.html#%E5%AE%89%E8%A3%85-Kali-NetHunter">参考文章</a>)</h2>
 <p><img src="http://imgsrc.baidu.com/super/pic/item/9c16fdfaaf51f3de500de4bad1eef01f3b2979b5.jpg" alt="命令说明"></p>
-<h1>图形化界面</h1>
+<h2 id="图形化界面">图形化界面</h2>
 <p>先执行<code>nh kex</code>(第一次需要设置密码)<br>
 <img src="http://imgsrc.baidu.com/super/pic/item/42a98226cffc1e17de36d1ef0f90f603728de967.jpg" alt=""></p>
 <blockquote>
