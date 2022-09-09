@@ -283,7 +283,7 @@ $$</code></pre>
 </blockquote>
 <hr>
 <h1>效果展示</h1>
-<iframe height=100% width=100% src="//player.bilibili.com/player.html?aid=557763032&bvid=BV13e4y1o7Lu&cid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<div class="bili_video"><iframe src="https://player.bilibili.com/player.html?aid=826399423&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="544" height="452" allowfullscreen="true"> </iframe></div>
 <hr>
 <h1>安装过程</h1>
 <p>在Termux中执行以下命令</p>
