@@ -846,6 +846,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script src="https://blog.zhheo.com/zhheo/blogex.js"></script>
+    - <script src="https://blog.zhheo.com/js/heo.js>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
     - <script async data-pjax src="/js/custom.js"></script>
     - <script async rel="prefetch" src="/js/surprise.js"></script>
