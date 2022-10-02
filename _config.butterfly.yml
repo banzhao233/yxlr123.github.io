@@ -847,12 +847,6 @@ inject:
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
-
-
-                    作者: pai233
-                    链接: https://blog.pai233.top/20220409/butterfly-popup-welcome-window/
-                    来源: 咕咕云梦泽
-                    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
