@@ -843,7 +843,6 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/mycss.css">
     - <link rel="stylesheet" href="/css/my-css.css">
-    - <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
