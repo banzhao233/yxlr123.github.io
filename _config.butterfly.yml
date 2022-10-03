@@ -781,8 +781,8 @@ note:
 pjax:
   enable: true
   exclude:
-    - /links/
-    - /talks/
+    #- /links/
+    #- /talks/
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
@@ -843,6 +843,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/mycss.css">
     - <link rel="stylesheet" href="/css/my-css.css">
+    - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
