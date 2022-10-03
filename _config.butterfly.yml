@@ -849,7 +849,7 @@ inject:
     - <link rel="stylesheet" href="/css/sweetalert.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="https://yxlr.tk/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
+    - <script src="https://cdn.yxlr.tk/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
     - <script async data-pjax src="/js/custom.js"></script>
     - <script async rel="prefetch" src="/js/surprise.js"></script>
