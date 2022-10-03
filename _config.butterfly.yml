@@ -410,7 +410,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 
+  custom_text: custom_text: <a href="https://banzhao233.github.io/"><img src="https://cdn.yxlr.tk/gh/banzhao233/yazhagiticbed@main/20220928/favicon.webp"><span>半昭の小站</span></a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -807,7 +807,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (圖片懶加載)
