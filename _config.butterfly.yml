@@ -410,7 +410,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: custom_text: <a href="https://banzhao233.github.io/"><img src="https://cdn.yxlr.tk/gh/banzhao233/yazhagiticbed@main/20220928/favicon.webp"><span>半昭の小站</span></a>
+  custom_text: <a href="https://banzhao233.github.io/"><img src="https://cdn.yxlr.tk/gh/banzhao233/yazhagiticbed@main/20220928/favicon.webp"><span>半昭の小站</span></a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
