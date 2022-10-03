@@ -19,7 +19,7 @@ async function checkLocalSite(url){
     try{
         console.log("check:",url)
         let domain = url.split("/")[2];
-        if(domain.endsWith("yxlr.tk")||domain.endsWith("yxlr.tk"))return true;
+        if(domain.endsWith("yxlr.tk")||domain.endsWith("127.0.0.1:4000"))return true;
         return false;
     }catch(err){
     return true;
