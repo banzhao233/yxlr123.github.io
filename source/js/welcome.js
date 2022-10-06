@@ -9,7 +9,7 @@ function welcome(){
         title: " 欢迎！",
         text: welcome_text+'\n打开页面下方音乐以获得更佳体验！',
         imageUrl: "https://pic.rmb.bdstatic.com/bjh/b3a460ecab97434df969e0aaef39dc53.jpeg",
-        timer: 1000,
+        timer: 3000,
         showConfirmButton: false
     });
 }
