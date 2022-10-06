@@ -196,7 +196,7 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/weixin.diffec28o0g.webp
+    - img: https://imgsrc.baidu.com/super/pic/item/29381f30e924b89933be71f82b061d950b7bf674.jpg
       link:
       text: 微信
     # - img: /img/alipay.jpg
