@@ -902,7 +902,7 @@ CDN:
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
     # mathjax:
     katex: https://npm.elemecdn.com//katex@latest/dist/katex.min.css
-    katex_copytex: http://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js
+    katex_copytex: https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js
     # mermaid:
     # canvas_ribbon:
     # canvas_fluttering_ribbon:
