@@ -37,6 +37,7 @@ jobs:
           npm install hexo -g
           npm install
           hexo g
+          gulp
 
       - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
