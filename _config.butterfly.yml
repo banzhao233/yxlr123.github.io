@@ -196,7 +196,7 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://imgsrc.baidu.com/super/pic/item/29381f30e924b89933be71f82b061d950b7bf674.jpg
+    - img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/weixin.diffec28o0g.webp
       link:
       text: 微信
     # - img: /img/alipay.jpg
@@ -842,19 +842,19 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/mycss.css">
-    - <link rel="stylesheet" href="/css/my-css.css">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/yxlr-images/css/mycss.css">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/yxlr-images/css/my-css.css">
     - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
-    - <script type="text/javascript" src ="/js/welcome.js" ></script> 
-    - <script src="/js/sweetalert.js"></script>
+    - <script defer type="text/javascript" src ="https://npm.elemecdn.com/yxlr-images/js/welcome.js" ></script> 
+    - <script defer src="https://npm.elemecdn.com/yxlr-images/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script src="https://cdn.yxlr.tk/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
-    - <script async data-pjax src="/js/custom.js"></script>
-    - <script async rel="prefetch" src="/js/surprise.js"></script>
-    - <script async src="/js/link-checker.js"></script>
+    - <script defer data-pjax src="https://npm.elemecdn.com/yxlr-images/js/custom.js"></script>
+    - <script defer rel="prefetch" src="https://npm.elemecdn.com/yxlr-images/js/surprise.js"></script>
+    - <script defer src="https://npm.elemecdn.com/yxlr-images/js/link-checker.js"></script>
     - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     # - <script src="xxxx"></script>
 
