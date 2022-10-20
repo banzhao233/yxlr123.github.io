@@ -587,7 +587,7 @@ font:
   global-font-size:
   code-font-size: 
   font-family: ZCOOL KuaiLe
-  code-font-family:
+  code-font-family: code
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -842,19 +842,19 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.cbd.int/yxlr-images/css/mycss.css">
-    - <link rel="stylesheet" href="https://cdn.cbd.int/yxlr-images/css/my-css.css">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/yxlr-images/css/mycss.css">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/yxlr-images/css/my-css.css">
     - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
-    - <script defer type="text/javascript" src ="https://cdn.cbd.int/yxlr-images/js/welcome.js" ></script> 
-    - <script defer src="https://cdn.cbd.int/yxlr-images/js/sweetalert.js"></script>
+    - <script defer type="text/javascript" src ="https://npm.elemecdn.com/yxlr-images/js/welcome.js" ></script> 
+    - <script defer src="https://npm.elemecdn.com/yxlr-images/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script src="https://cdn.yxlr.tk/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
-    - <script defer data-pjax src="https://cdn.cbd.int/yxlr-images/js/custom.js"></script>
-    - <script defer rel="prefetch" src="https://cdn.cbd.int/yxlr-images/js/surprise.js"></script>
-    - <script defer src="https://cdn.cbd.int/yxlr-images/js/link-checker.js"></script>
+    - <script defer data-pjax src="https://npm.elemecdn.com/yxlr-images/js/custom.js"></script>
+    - <script defer rel="prefetch" src="https://npm.elemecdn.com/yxlr-images/js/surprise.js"></script>
+    - <script defer src="https://npm.elemecdn.com/yxlr-images/js/link-checker.js"></script>
     - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     # - <script src="xxxx"></script>
 
@@ -881,10 +881,10 @@ CDN:
 
   option:
     # main_css: 
-    main: https://cdn.cbd.int/hexo-theme-butterfly@4.3.1/source/js/main.js
-    utils: https://cdn.cbd.int/hexo-theme-butterfly@4.3.1/source/js/utils.js
+    main: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/main.js
+    utils: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/utils.js
     translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
-    local_search: https://cdn.cbd.int/hexo-theme-butterfly@latest/source/js/search/local-search.js
+    local_search: https://npm.elemecdn.com/hexo-theme-butterfly@latest/source/js/search/local-search.js
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:
@@ -896,13 +896,13 @@ CDN:
     # disqusjs:
     # disqusjs_css:
     # twikoo:
-    waline_js: https://cdn.cbd.int/@waline/client@latest/dist/waline.js
-    waline_css: https://cdn.cbd.int/@waline/client@latest/dist/waline.css
+    waline_js: https://npm.elemecdn.com/@waline/client@latest/dist/waline.js
+    waline_css: https://npm.elemecdn.com/@waline/client@latest/dist/waline.css
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
     # mathjax:
-    katex: https://cdn.cbd.int//katex@latest/dist/katex.min.css
-    katex_copytex: https://cdn.cbd.int/katex@latest/dist/contrib/copy-tex.min.js
+    katex: https://npm.elemecdn.com//katex@latest/dist/katex.min.css
+    katex_copytex: https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js
     # mermaid:
     # canvas_ribbon:
     # canvas_fluttering_ribbon:
@@ -911,21 +911,21 @@ CDN:
     instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
     # typed:
     # pangu:
-    fancybox_css_v4: https://cdn.cbd.int/@fancyapps/ui@latest/dist/fancybox.css
-    fancybox_v4: https://cdn.cbd.int/@fancyapps/ui@latest/dist/fancybox.umd.js
+    fancybox_css_v4: https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox.css
+    fancybox_v4: https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox.umd.js
     # medium_zoom:
     snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
     snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
-    activate_power_mode: https://cdn.cbd.int/butterfly-extsrc@latest/dist/activate-power-mode.min.js
+    activate_power_mode: https://npm.elemecdn.com/butterfly-extsrc@latest/dist/activate-power-mode.min.js
     # fireworks:
-    click_heart: https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-heart.min.js
-    ClickShowText: https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-show-text.min.js
+    click_heart: https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/click-heart.min.js
+    ClickShowText: https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/click-show-text.min.js
     fontawesomeV6: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
-    aplayer_css: https://cdn.cbd.int/aplayer@latest/dist/APlayer.min.css
-    aplayer_js: https://cdn.cbd.int/aplayer@latest/dist/APlayer.min.js
-    meting_js: https://cdn.cbd.int/butterfly-extsrc@latest/metingjs/dist/Meting.min.js
+    aplayer_css: https://npm.elemecdn.com/aplayer@latest/dist/APlayer.min.css
+    aplayer_js: https://npm.elemecdn.com/aplayer@latest/dist/APlayer.min.js
+    meting_js: https://npm.elemecdn.com/butterfly-extsrc@latest/metingjs/dist/Meting.min.js
     prismjs_js:prismjs_js: https://cdn1.tianli0.top/npm/prismjs@1.1.0/prism.js
     prismjs_lineNumber_js: https://cdn1.tianli0.top/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
     prismjs_autoloader: https://cdn1.tianli0.top/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
