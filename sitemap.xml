@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yxlr.tk/tags/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/talks/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yxlr.tk/tools/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yxlr.tk/post/161d4b0f.html</loc>
     
     <lastmod>2022-10-21</lastmod>
@@ -66,6 +39,33 @@
   
   <url>
     <loc>https://yxlr.tk/links/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yxlr.tk/tags/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yxlr.tk/talks/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yxlr.tk/tools/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
