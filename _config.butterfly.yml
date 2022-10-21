@@ -842,8 +842,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/yxlr-images@latest/css/mycss.min.css">
-    - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/yxlr-images@latest/css/my-css.min.css">
+    - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/yxlr-images/css/mycss.min.css">
+    - <link rel="stylesheet" href="https://cdn.yxlr.tk/npm/yxlr-images/css/my-css.min.css">
     - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
     - <script defer type="text/javascript" src ="https://npm.elemecdn.com/yxlr-images@latest/js/welcome.js" ></script> 
     - <script defer src="https://npm.elemecdn.com/yxlr-images@latest/js/sweetalert.js"></script>
