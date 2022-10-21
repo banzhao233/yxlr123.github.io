@@ -587,7 +587,7 @@ font:
   global-font-size:
   code-font-size: 
   font-family: ZCOOL KuaiLe
-  code-font-family: code
+  code-font-family: MyFont
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
