@@ -842,9 +842,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://blog.zhheo.com/zhheo/zhheoblog.css">
-    #- <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/static-butterfly@1.6.0/dist/css/index.min.css">
-    - <link rel="stylesheet" href="https://blog.zhheo.com/zhheo/commentBarrage.css">
+    - <link rel="stylesheet" href="/css/mycss.css">
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/static-butterfly@1.6.0/dist/css/index.min.css">
     - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
