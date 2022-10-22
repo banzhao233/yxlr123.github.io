@@ -196,20 +196,20 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://cdn.yxlr.tk/gh/yxlr123/imges@main/weixin.diffec28o0g.webp
+    - img: http://imgsrc.baidu.com/super/pic/item/7e3e6709c93d70cf752ab3ccbddcd100bba12b1a.jpg
       link:
       text: 微信
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    #- img: /img/alipay.jpg
+    #  link:
+    #  text: 
 
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://admin-yxlr.tk/edit.html?file=
 
 # Related Articles
 related_post:
