@@ -44,7 +44,7 @@ audio {
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: transparent
+    background-color: initial
 }
 
 ::-moz-selection {
@@ -153,7 +153,7 @@ span.inline-tag {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    vertical-align: baseline;
+    vertical-align: initial;
     border-radius: .1rem;
     border-radius: 6px;
     background-color: var(--Color)
@@ -174,7 +174,7 @@ p.div-border {
     border: 1px solid #333;
     border: 1px solid var(--Color, #333);
     border-radius: .4rem;
-    background-color: transparent;
+    background-color: initial;
     background-color: var(--ColorA, transparent)
 }
 
@@ -202,9 +202,7 @@ p.top {
     text-decoration: none;
     margin: .2rem auto;
     background: var(--tab-botton-bg);
-    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-align-items: center;
     align-items: center;
     cursor: pointer;
     text-align: left;
@@ -241,7 +239,6 @@ p.top {
     height: 48px;
     margin: 12px;
     overflow: hidden;
-    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     position: relative
 }
@@ -279,7 +276,6 @@ p.top {
 }
 
 #post a.link-card p.url {
-    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     color: var(--search-input-color);
     font-size: .7125rem
@@ -448,9 +444,7 @@ div.timenode:hover .meta:after {
 }
 
 .checkbox {
-    display: -webkit-flex;
     display: flex;
-    -webkit-align-items: center;
     align-items: center
 }
 
@@ -472,7 +466,6 @@ div.timenode:hover .meta:after {
     display: inline-block;
     outline: 0;
     border-radius: 2px;
-    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     margin-right: 8px;
     border: 2px solid #2196f3
@@ -680,32 +673,24 @@ div.timenode:hover .meta:after {
 
 div .btns {
     margin: 0 -8px;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    overflow: visible
-}
-
-div .btns,
-div .btns a {
-    display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: visible;
     font-size: .8125rem;
     color: #555
 }
 
 div .btns a {
+    font-size: .8125rem;
+    color: #555;
     margin: 52px 8px 8px;
     min-width: 120px;
     font-weight: 700;
-    -webkit-justify-content: flex-start;
+    display: flex;
     justify-content: flex-start;
-    -webkit-align-content: center;
     align-content: center;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-flex-direction: column;
     flex-direction: column;
     padding: 8px;
     text-align: center;
@@ -804,18 +789,15 @@ div .btns.wide>a {
 }
 
 div .btns.fill>a {
-    -webkit-flex-grow: 1;
     flex-grow: 1;
     width: auto
 }
 
 div .btns.around {
-    -webkit-justify-content: space-around;
     justify-content: space-around
 }
 
 div .btns.center {
-    -webkit-justify-content: center;
     justify-content: center
 }
 
@@ -1140,23 +1122,16 @@ div.gallery>p>.fancybox:hover .image-caption {
 
 div.gallery,
 div.gallery>p {
-    display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding: 0 !important;
-    -webkit-align-items: stretch;
     align-items: stretch
 }
 
 div.gallery[col]>p {
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: flex-start;
     justify-content: flex-start
 }
 
@@ -1194,25 +1169,21 @@ div.gallery>p {
 
 div.gallery.left,
 div.gallery.left>p {
-    -webkit-justify-content: flex-start;
     justify-content: flex-start
 }
 
 div.gallery.center,
 div.gallery.center>p {
-    -webkit-justify-content: center;
     justify-content: center
 }
 
 div.gallery.right,
 div.gallery.right>p {
-    -webkit-justify-content: flex-end;
     justify-content: flex-end
 }
 
 div.gallery.stretch,
 div.gallery.stretch>p {
-    -webkit-align-items: stretch;
     align-items: stretch
 }
 
@@ -1223,15 +1194,10 @@ div.gallery.stretch img {
 }
 
 .fancybox {
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding: 0 !important;
     overflow: hidden;
@@ -1247,9 +1213,7 @@ div.gallery.stretch img {
 .fancybox a {
     line-height: 0;
     margin: 0;
-    -webkit-align-items: stretch;
     align-items: stretch;
-    cursor: -webkit-zoom-in;
     cursor: zoom-in
 }
 
@@ -1934,10 +1898,8 @@ pre[class*=language-] {
     font-family: Roboto Mono, monospace;
     font-size: 1em;
     line-height: 1.5em;
-    -moz-tab-size: 4;
     tab-size: 4;
     -webkit-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none
 }
 
