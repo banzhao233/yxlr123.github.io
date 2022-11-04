@@ -2,6 +2,7 @@
 date: 2022-08-16 04:06:39
 title: 友链
 updated: 2022-09-08 10:43:59
+type: "link"
 ---
 <div class="js-pjax">
     <div id="qexo-friends"></div>
