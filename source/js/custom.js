@@ -4,7 +4,7 @@ if(PublicSacrificeDay()){
     }
 
 function PublicSacrificeDay(){
-    var PSFarr=new Array("0403","0404","0405","0406","0414","0512","0707","0807","0814","0909","0918","0930","1025","1213");
+    var PSFarr=new Array("0403","0404","0405","0406","0414","0512","0707","0807","0814","0909","0918","0930","1025","1104","1213");
     //2020年4月4日 新冠肺炎哀悼日，清明节
     //2010年4月14日，青海玉树地震
     //2008年5月12日，四川汶川地震
@@ -53,3 +53,32 @@ function percent() {
         up.childNodes[0].style.display = 'block'
     }
 }
+
+//标签条
+function tagsBarActive(){
+  var urlinfo = window.location.pathname;
+  urlinfo = decodeURIComponent(urlinfo)
+  //console.log(urlinfo);
+  //判断是否是首页
+  if (urlinfo == '/'){
+    if (document.querySelector('#tags-bar')){
+      document.getElementById('首页').classList.add("select")
+    }
+  }else {
+    // 验证是否是分类链接
+    var pattern = /\/tags\/.*?\//;
+    var patbool = pattern.test(urlinfo);
+    //console.log(patbool);
+    // 获取当前的标签
+    if (patbool) {
+      var valuegroup = urlinfo.split("/");
+      //console.log(valuegroup[2]);
+      // 获取当前分类
+      var nowTag = valuegroup[2];
+      if (document.querySelector('#category-bar')){
+        document.getElementById(nowTag).classList.add("select");
+      }
+    }
+  } 
+}
+tagsBarActive()
