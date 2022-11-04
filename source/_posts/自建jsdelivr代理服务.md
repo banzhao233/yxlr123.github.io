@@ -201,5 +201,5 @@ RewriteCond %{REQUEST_FILENAME}  ^index\.php?$
 RewriteRule ^(.*)$ - [S=1]
 RewriteRule . /index.php [L]
 ```
-> 使用方法和jsdelivr一样，我搭建的地址：<https://cdn.yxlr.tk>
+> 使用方法和jsdelivr一样，我搭建的地址：<https://cdn1.tianli0.top>
 
