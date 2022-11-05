@@ -1,18 +1,17 @@
 ---
 abbrlink: f9fe76d9
 categories:
-  - - 源码分享
-cover: >-
-  https://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg
+- - 源码分享
+cover: https://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg
 date: '2022-09-02 10:18:44'
 description: html实现3D魔方小游戏
 keywords: html3D魔方小游戏
 tags:
-  - html
-  - 源码
+- html
+- 源码
 title: 【源码分享】html 3D魔方
 top_img: false
-updated: '2022-09-02 10:18:49'
+updated: '2022-11-05 22:09:44'
 ---
 ![](http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg)
 
@@ -31,6 +30,6 @@ updated: '2022-09-02 10:18:49'
 * 安知鱼网盘：[https://cloud.anzhiy.cn/s/yv5ztK](https://cloud.anzhiy.cn/s/yv5ztK)
   密码：yxlr.tk
 * \*度网盘：
-  地址：[https://pan.baidu.com/s/1hz1gHIAq9dDlZKWSvkYO8w](%E2%80%B8https://pan.baidu.com/s/1hz1gHIAq9dDlZKWSvkYO8w)
+  地址：[https://pan.baidu.com/s/1hz1gHIAq9dDlZKWSvkYO8w](https://pan.baidu.com/s/1hz1gHIAq9dDlZKWSvkYO8w)
   提取码：yxlr
 
