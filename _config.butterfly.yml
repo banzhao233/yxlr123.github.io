@@ -410,7 +410,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: <a href="https://banzhao233.github.io/"><span>半昭の小站</span></a>
+  custom_text: <a href="https://banzhao233.github.io/"><span>半昭の小站</span></a> <a href="https://icp.gov.moe/?keyword=20220704" target="_blank">萌ICP备20220704号</a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
