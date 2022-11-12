@@ -7,7 +7,7 @@
 @font-face {
   font-family: MyFont;
   font-display: swap;
-  src: url(JetBrainsMono-BoldItalic.ttf) format("truetype");
+  src: url(/fonts/JetBrainsMono-BoldItalic.ttf) format("truetype");
 }
 .pace {
   -webkit-pointer-events: none;

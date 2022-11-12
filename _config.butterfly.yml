@@ -9,9 +9,7 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
   博客曰志: /talks/ || fas fa-book
-  工具||fas fa-toolbox:
-    API: /api/ || fas fa-link
-    小工具: /tools/ || fas fa-screwdriver-wrench
+  小工具: /tools/ || fas fa-screwdriver-wrench
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -410,7 +408,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: <a href="https://banzhao233.github.io/"><span>半昭の小站</span></a> <a href="https://icp.gov.moe/?keyword=20220704" target="_blank">萌ICP备20220704号</a>
+  custom_text: <a href="https://banzhao233.github.io/"><span>半昭の小站</span></a> || <a href="https://icp.gov.moe/?keyword=20220704" target="_blank">萌ICP备20220704号</a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
