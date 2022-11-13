@@ -261,7 +261,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42
-  use: Waline # Valine,Disqus
+  use: Twikoo # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -340,8 +340,8 @@ facebook_comments:
 # https://github.com/imaegoo/twikoo
 twikoo:
   envId:
-  region:
-  visitor: false
+  region: https://twikoo.yxlr.eu.org/
+  visitor: true
   option:
 
 # Giscus
@@ -894,7 +894,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo:
+    twikoo: https://cdn1.tianli0.top/gh/zhheo/twikoo@dev/dist/twikoo.all.min.js
     waline_js: https://npm.elemecdn.com/@waline/client@latest/dist/waline.js
     waline_css: https://npm.elemecdn.com/@waline/client@latest/dist/waline.css
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
