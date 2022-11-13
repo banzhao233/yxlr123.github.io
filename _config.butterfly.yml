@@ -3,15 +3,14 @@
 # --------------------------------------
 
 menu:
-  主页: / || fas fa-home
-  文章||fas fa-book:
+  文章||:
     时间轴: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  博客曰志: /talks/ || fas fa-book
-  小工具: /tools/ || fas fa-screwdriver-wrench
-  友链: /links/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  博客曰志: /talks/
+  小工具: /tools/
+  友链: /links/
+  关于: /about/
 
 # Code Blocks (代碼相關)
 # --------------------------------------
