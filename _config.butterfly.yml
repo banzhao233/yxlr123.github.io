@@ -842,7 +842,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/mycss.css">
     - <link rel="stylesheet" href="/css/my.css">
-    - <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+    - <script async src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
@@ -850,7 +850,7 @@ inject:
     - <link rel="stylesheet" href="/css/commentBarrage.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
+    - <script async src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
     - <script data-pjax src="/js/custom.js"></script>
     - <script rel="prefetch" src="/js/surprise.js"></script>
