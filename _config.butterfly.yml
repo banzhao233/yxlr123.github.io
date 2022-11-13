@@ -846,6 +846,8 @@ inject:
     - <script type="text/javascript" src ="/js/welcome.js" ></script> 
     - <script src="/js/sweetalert.js"></script>
     - <link rel="stylesheet" href="/css/sweetalert.css">
+    - <style id="barragesColor"></style>
+    - <link rel="stylesheet" href="/css/commentBarrage.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
@@ -855,6 +857,7 @@ inject:
     - <link rel="stylesheet" type="text/css" href="https://cdn1.tianli0.top/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
     - <link rel="stylesheet" type="text/css" href="https://cdn1.tianli0.top/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
     - <script async src="https://cdn1.tianli0.top/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
+    - <script type="text/javascript" src="/js/commentBarrage.js"></script>
     - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     # - <script src="xxxx"></script>
 
