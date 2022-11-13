@@ -576,7 +576,7 @@ display_mode: light
 beautify:
   enable: true
   field: site # site/post
-  title-prefix-icon: '\f0e7'
+  title-prefix-icon:
   title-prefix-icon-color: '#F47466'
 
 # Global font settings
@@ -814,7 +814,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: /img/loading.gif
+  placeholder:
   blur: true
 
 # PWA
