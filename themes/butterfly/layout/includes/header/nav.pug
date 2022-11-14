@@ -27,10 +27,13 @@ nav#nav
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
 
-    if darkmode.enable && darkmode.button
-      div.nav-button#darkmode_navswitch
-        a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
-          i.fas.fa-adjust
+    div.nav-button#randoms
+      a(href="javascript:toRandomPost()")
+        i.fa.fa-paper-plane
+
+    div.nav-button#travellings
+      a(href="https://travellings.link")
+        i.fa.fa-subway
 
     div.nav-button#nav-totop
       a.totopbtn
