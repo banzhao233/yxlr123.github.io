@@ -130,7 +130,7 @@ live2d:
     width: 150
     height: 300
   mobile:
-    show: false
+    show: true
     react:
     opacity: 0.5
 
@@ -182,7 +182,7 @@ markdown:
 
 butterfly_article_double_row:
   enable: false
- 
+
 lazyload:
   enable: false
   onlypost: true
