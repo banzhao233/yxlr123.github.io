@@ -37,6 +37,7 @@ jobs:
           npm install hexo -g
           npm install
           hexo g
+          hexo algolia
           gulp
 
       - name: 部署到Github

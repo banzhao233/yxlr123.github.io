@@ -107,7 +107,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://yxlr123:20081228dbh@github.com/yxlr123/yxlr123.github.io.git,blog
+  repository:
 
 wordcount:
   enable: true
@@ -134,12 +134,21 @@ live2d:
     react:
     opacity: 0.5
 
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 600
-  content: true
+algolia:
+  appId: "IR55T5PPF5"
+  apiKey: "2d1ac1abbed8c32595c4d82b1ae5850d"
+  adminApiKey: "4b2efae29e7f0d1f6173558915645bc7"
+  chunkSize: 5000
+  indexName: "my-hexo-blog"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
 
 # APlayer
 # https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
@@ -204,21 +213,17 @@ tag_plugins:
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
 
-bilibili:
-  width: 452
-  height: 544
-
 # hexo-filter-gitcalendar
 # see https://akilar.top/posts/1f9c68c9/
 gitcalendar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
+  enable: false # 开关
+  priority: 20 #过滤器优先权
   enable_page: / # 应用页面
   # butterfly挂载容器
   layout: # 挂载容器类型
     type: id
     name: recent-posts
-    index: 0
+    index: 10
 # volantis挂载容器
 # layout:
 #   type: class

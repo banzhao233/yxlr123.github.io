@@ -9,4 +9,5 @@
               - var contentText = item.image ? item.content + ' [图片]' : item.content
               .li-style.swiper-slide= contentText
 
-    i.bber-gotobb.fas.fa-arrow-circle-right.fa-1x(onclick=`pjax.loadUrl("/essay/")`,title="查看全文")
+    i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`pjax.loadUrl("/essay/")`,title="查看全文")
+script(src='https://npm.elemecdn.com/swiper/swiper-bundle.min.js',data-pjax='')
