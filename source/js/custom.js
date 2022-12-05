@@ -61,7 +61,9 @@ function PublicSacrificeDay() {
     "0918",
     "0930",
     "1025",
-    "1213"
+    "1213",
+    "1205",
+    "1206"
   );
   //2020年4月4日 新冠肺炎哀悼日，清明节
   //2010年4月14日，青海玉树地震
@@ -74,6 +76,7 @@ function PublicSacrificeDay() {
   //烈士纪念日为每年9月30日
   //1950年10月25日，抗美援朝纪念日
   //1937年12月13日，南京大屠杀
+  //2022/12/06 全国默哀
   var currentdate = new Date();
   var str = "";
   var mm = currentdate.getMonth() + 1;
