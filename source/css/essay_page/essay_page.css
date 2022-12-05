@@ -342,3 +342,111 @@
   -webkit-animation: rotate 1.6s linear infinite;
   animation: rotate 1.6s linear infinite;
 }
+
+/* 顶部样式 */
+.author-content.author-content-item.essayPage {
+  height: 19rem;
+  background: url(https://imgsrc.baidu.com/super/pic/item/35a85edf8db1cb13935089d09854564e92584b3c.jpg)
+    no-repeat center;
+  background-size: cover;
+  color: var(--yxlr-white);
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.author-content-item.single {
+  width: 100%;
+}
+.author-content-item.map .map-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--yxlr-maskbg);
+  padding: 0.5rem 2rem;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: 1s ease-in-out;
+  font-size: 20px;
+}
+.author-content-item.map .map-title b {
+  color: var(--font-color);
+}
+.author-content-item.selfInfo {
+  display: flex;
+  min-height: 100px;
+  max-height: 400px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: -webkit-fill-available;
+  height: 40%;
+}
+.author-content-item.selfInfo div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 2rem 0.5rem 0;
+}
+.author-content-item.selfInfo .selfInfo-title {
+  opacity: 0.8;
+  font-size: 0.6rem;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.author-content-item.selfInfo .selfInfo-content {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+}
+.author-content-item-group.column.mapAndInfo {
+  width: 59%;
+}
+.author-content-item.map:hover {
+  background-size: 120%;
+  transition: 4s ease-in-out;
+  background-position-x: 0;
+  background-position-y: 36%;
+}
+.author-content-item.map:hover .map-title {
+  bottom: -100%;
+}
+.author-content-item-group.column {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  justify-content: space-between;
+}
+.post-tips a:hover {
+  color: var(--yxlr-main) !important;
+  background: 0 0 !important;
+}
+.author-content-item.single.reward .reward-list-updateDate {
+  color: var(--yxlr-gray);
+  font-size: 14px;
+}
+.author-content-item.single.reward .post-reward {
+  position: absolute;
+  margin-top: 0;
+  width: auto;
+  text-align: none;
+  pointer-events: none;
+  right: 2rem;
+  top: 2rem;
+}
+.author-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+.author-content-item {
+  width: 49%;
+  border-radius: 24px;
+  background: var(--yxlr-card-bg);
+  border: var(--style-border-always);
+  box-shadow: var(--yxlr-shadow-border);
+  position: relative;
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
