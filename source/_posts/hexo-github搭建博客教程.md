@@ -66,7 +66,7 @@ cd MyBlog
 hexo g && hexo s
 ```
 
-用浏览器打开[http://localhost:4000/](http://localhost:4000/)
+用浏览器打开[https://localhost:4000/](https://localhost:4000/)
 看到如下图就是成功了
 ![效果](https://pic.rmb.bdstatic.com/bjh/9f4a6a09b5b3f6516668ab45827cc574.png)
 按`ctrl+c`关闭本地服务器。
@@ -156,7 +156,7 @@ hexo d
 
 > 注意`hexo d`时可能要你输入`username`和`password`。
 
-得到下图就说明部署成功了，过一会儿就可以在[http://yourname.github.io](http://yourname.github.io) 这个网站看到你的博客了！！
+得到下图就说明部署成功了，过一会儿就可以在[https://yourname.github.io](https://yourname.github.io) 这个网站看到你的博客了！！
 ![部署成功](https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png)
 
 ## 写文章、发布文章
@@ -185,8 +185,8 @@ author: John Doe #你的名字
 language: en #网站使用的语言
 timezone: '' #网站时区
 # URL
-## 如果您的网站位于子目录中，请将url设置为'http://yoursite.com/child'，将root设置为'/child/'
-url: http://yoursite.com #可以改成你的github.io网址
+## 如果您的网站位于子目录中，请将url设置为'https://yoursite.com/child'，将root设置为'/child/'
+url: https://yoursite.com #可以改成你的github.io网址
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

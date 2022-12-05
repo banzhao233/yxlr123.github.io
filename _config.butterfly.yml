@@ -193,7 +193,7 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: http://imgsrc.baidu.com/super/pic/item/7e3e6709c93d70cf752ab3ccbddcd100bba12b1a.jpg
+    - img: https://imgsrc.baidu.com/super/pic/item/7e3e6709c93d70cf752ab3ccbddcd100bba12b1a.jpg
       link:
       text: 微信
     #- img: /img/alipay.jpg
@@ -338,7 +338,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.yxlr.eu.org
+  envId: https://twikoo.yxlr.tk
   region: 
   visitor: true
   option:
@@ -384,7 +384,7 @@ tidio:
   public_key:
 
 # daovoice
-# http://daovoice.io/
+# https://daovoice.io/
 daovoice:
   enable: false
   app_id:
@@ -498,8 +498,8 @@ tag_ui: # 留空或 index
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
-# The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(http://imgsrc.baidu.com/super/pic/item/e850352ac65c10384ed90402f7119313b17e894f.jpg)
+# The formal of image: url(https://xxxxxx.com/xxx.jpg)
+background: url(https://imgsrc.baidu.com/super/pic/item/e850352ac65c10384ed90402f7119313b17e894f.jpg)
 # Footer Background
 footer_bg: true
 
@@ -608,7 +608,7 @@ subtitle:
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） http://yijuzhan.com/
+  # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: 1
@@ -739,7 +739,7 @@ rightside_item_order:
 medium_zoom: false
 
 # fancybox
-# http://fancyapps.com/fancybox/3/
+# https://fancyapps.com/fancybox/3/
 fancybox: true
 
 # Tag Plugins settings (標籤外掛)

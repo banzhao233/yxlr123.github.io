@@ -19,7 +19,7 @@ toc: true
 
 在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。
 
-![报错](http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg)
+![报错](https://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg)
 
 后来官方修复了，但是国内几个节点寄了。备案还掉了≥﹏≤。
 
