@@ -374,7 +374,7 @@ npm -v</code></pre>
 cd MyBlog</code></pre>
 <p>测试</p>
 <pre class="language-Bash" data-language="Bash"><code class="language-Bash">hexo g &amp;&amp; hexo s</code></pre>
-<p>用浏览器打开<a href="http://localhost:4000/">http://localhost:4000/</a><br>
+<p>用浏览器打开<a href="https://localhost:4000/">https://localhost:4000/</a><br>
 看到如下图就是成功了<br>
 <img src="https://pic.rmb.bdstatic.com/bjh/9f4a6a09b5b3f6516668ab45827cc574.png" alt="效果"><br>
 按<code>ctrl+c</code>关闭本地服务器。</p>
@@ -423,7 +423,7 @@ hexo d</code></pre>
 <blockquote>
 <p>注意<code>hexo d</code>时可能要你输入<code>username</code>和<code>password</code>。</p>
 </blockquote>
-<p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io">http://yourname.github.io</a> 这个网站看到你的博客了！！<br>
+<p>得到下图就说明部署成功了，过一会儿就可以在<a href="https://yourname.github.io">https://yourname.github.io</a> 这个网站看到你的博客了！！<br>
 <img src="https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png" alt="部署成功"></p>
 <h2 id="写文章、发布文章">写文章、发布文章</h2>
 <p>新建一篇文章输入：</p>
@@ -442,8 +442,8 @@ author: John Doe #你的名字
 language: en #网站使用的语言
 timezone: &#39;&#39; #网站时区
 # URL
-## 如果您的网站位于子目录中，请将url设置为&#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39;，将root设置为&#39;&#x2F;child&#x2F;&#39;
-url: http:&#x2F;&#x2F;yoursite.com #可以改成你的github.io网址
+## 如果您的网站位于子目录中，请将url设置为&#39;https:&#x2F;&#x2F;yoursite.com&#x2F;child&#39;，将root设置为&#39;&#x2F;child&#x2F;&#39;
+url: https:&#x2F;&#x2F;yoursite.com #可以改成你的github.io网址
 root: &#x2F;
 permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;
 permalink_defaults:
@@ -473,7 +473,7 @@ pretty_urls:
   <entry>
     <title>【源码分享】html 3D魔方</title>
     <url>/post/f9fe76d9.html</url>
-    <content><![CDATA[<p><img src="http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg" alt=""></p>
+    <content><![CDATA[<p><img src="https://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d539a32a3a1d7f87e950342ab0dc.jpg" alt=""></p>
 <h3 id="源码介绍">源码介绍</h3>
 <p>使用<code>html</code>+<code>css</code>+<code>js</code>实现的魔方小游戏，可用于404错误页面。</p>
 <h3 id="演示">演示</h3>
@@ -682,7 +682,7 @@ code-server # 启动</code></pre>
     <url>/post/7db9c141.html</url>
     <content><![CDATA[<h1>起因</h1>
 <p>在前一段时间，jsdelivr国内突然报错，还出现了DNS污染。</p>
-<p><img src="http://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
+<p><img src="https://imgsrc.baidu.com/super/pic/item/902397dda144ad344ee7a35995a20cf430ad8597.jpg" alt="报错"></p>
 <p>后来官方修复了，但是国内几个节点寄了。备案还掉了≥﹏≤。</p>
 <h1>想法</h1>
 <p>我萌生了自建cdn的想法，但当我看了看网上的方法，最终选择了使用php进行反向代理</p>
