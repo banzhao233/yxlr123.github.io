@@ -190,7 +190,7 @@ markdown:
         strict: false
 
 butterfly_article_double_row:
-  enable: false
+  enable: true
 
 lazyload:
   enable: false

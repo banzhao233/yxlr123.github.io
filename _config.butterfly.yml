@@ -840,19 +840,19 @@ css_prefix: true
 inject:
   head:
     - <link data-pjax rel="stylesheet" href="/css/mycss.css">
-    - <link rel="stylesheet" href="/css/my.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/swiper/swiper-bundle.min.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/js-heo@1.0.11/bb/showbb_in_index.css">
-    - <link rel="stylesheet" href="/css/essay_page/home_essay_bar.css">
-    - <link rel="stylesheet" href="/css/essay_page/essay_page.css">
+    - <link defer rel="stylesheet" href="/css/my.css">
+    - <link defer rel="stylesheet" href="https://npm.elemecdn.com/swiper/swiper-bundle.min.css">
+    - <link defer rel="stylesheet" href="https://npm.elemecdn.com/js-heo@1.0.11/bb/showbb_in_index.css">
+    - <link async rel="stylesheet" href="/css/essay_page/home_essay_bar.css">
+    - <link async rel="stylesheet" href="/css/essay_page/essay_page.css">
     - <script async data-pjax src="/js/waterfall/waterfall.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script async src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
+    - <script defer src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
     - <script data-pjax src="/js/custom.js"></script>
-    - <script rel="prefetch" src="/js/surprise.js"></script>
-    - <script src="/js/random.js"></script>
+    - <script async rel="prefetch" src="/js/surprise.js"></script>
+    - <script async src="/js/random.js"></script>
     - <canvas id="universe"></canvas>
     - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     # - <script src="xxxx"></script>
