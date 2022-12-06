@@ -40,7 +40,7 @@ jobs:
           hexo algolia
           gulp
 
-      - name: 部署到Github
+      - name: 部署到blog仓库
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
