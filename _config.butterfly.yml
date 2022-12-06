@@ -839,7 +839,9 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link data-pjax rel="stylesheet" href="https://npm.elemecdn.com/yxlr-blog@1.0.1/css/mycss.css">
+    - <link async data-pjax rel="stylesheet" href="/css/yxlr.css">
+    - <link async data-pjax rel="stylesheet" href="/css/cardlistpost.css">
+    - <link defer rel="stylesheet" href="https://npm.elemecdn.com/yxlr-blog@1.0.1/css/mycss.css">
     - <link defer rel="stylesheet" href="https://npm.elemecdn.com/yxlr-blog@1.0.1/css/my.css">
     - <link defer rel="stylesheet" href="https://npm.elemecdn.com/swiper/swiper-bundle.min.css">
     - <link defer rel="stylesheet" href="https://npm.elemecdn.com/js-heo@1.0.11/bb/showbb_in_index.css">
@@ -893,7 +895,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    twikoo: https://cdn1.tianli0.top/gh/zhheo/twikoo@dev/dist/twikoo.all.min.js
+    # twikoo:
     waline_js: https://npm.elemecdn.com/@waline/client@latest/dist/waline.js
     waline_css: https://npm.elemecdn.com/@waline/client@latest/dist/waline.css
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
