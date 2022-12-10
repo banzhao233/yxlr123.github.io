@@ -15,3 +15,26 @@
       link: https://blog.zhheo.com/
       avatar: https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png
       descr: 分享设计与科技生活
+- class_name: 小伙伴们
+  flink_style: butterfly
+  link_list:
+    - name: 潘高的小站
+      link: https://blog.pangao.vip
+      avatar: http://imgsrc.baidu.com/super/pic/item/8cb1cb1349540923b6caa7a1d758d109b2de494a.jpg
+      descr: IT套路深，必须瞎折腾
+    - name: 土土博客
+      link: https://tutime.cn/
+      avatar: https://www.tutime.cn/favorite.png
+      descr: 追逐幻想
+    - name: 芝士小屋
+      link: https://www.xins666.com/
+      avatar: https://xins666.com/wp-content/uploads/2022/08/e3c090bf8a175016.png
+      descr: 总有一篇文章是你想要的
+    - name: 动荡の初二少年
+      link: https://www.yt-blog.top/
+      avatar: https://img.yt-blog.top/png/big_logo.png
+      descr: 一个少年的博客
+    - name: 半昭の小站
+      link: https://banzhao233.github.io
+      avatar: https://cdn1.tianli0.top/gh/banzhao233/yazhagiticbed@main/20220928/favicon.webp
+      descr: 躺平~~~摆烂~~~
