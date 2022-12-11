@@ -77,11 +77,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn1.tianli0.top/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
+favicon: https://jsd.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn1.tianli0.top/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
+  img: https://jsd.yxlr.tk/gh/yxlr123/imges@main/avatar.19ge0zdo7mv4.webp
   effect: false
 
 # Disable all banner image
@@ -851,7 +851,7 @@ inject:
     - <script async data-pjax src="https://npm.elemecdn.com/yxlr-blog@1.0.1/js/waterfall/waterfall.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script defer src="https://cdn1.tianli0.top/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
+    - <script defer src="https://jsd.yxlr.tk/gh/CodeByZach/pace@1.2.3/pace.min.js"></script>
     - <script>var HoldLog = console.log;console.log = function () {};let now1 = new Date();</script>
     - <script data-pjax src="https://npm.elemecdn.com/yxlr-blog@1.0.1/js/custom.js"></script>
     - <script async rel="prefetch" src="https://npm.elemecdn.com/yxlr-blog@1.0.1/js/surprise.js"></script>
@@ -886,7 +886,7 @@ CDN:
     # main_css: 
     main: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/main.js
     utils: https://npm.elemecdn.com/hexo-theme-butterfly@4.3.1/source/js/utils.js
-    translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
+    translate: https://jsd.yxlr.tk/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search: https://npm.elemecdn.com/anzhiyu-blog@2.1.2/js/search/local-search.js
     # algolia_js:
     # algolia_search_v4:
@@ -929,6 +929,6 @@ CDN:
     aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
     aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
     meting_js: /js/meting.js
-    prismjs_js: https://cdn1.tianli0.top/npm/prismjs@1.1.0/prism.min.js
-    prismjs_lineNumber_js: https://cdn1.tianli0.top/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-    prismjs_autoloader: https://cdn1.tianli0.top/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+    prismjs_js: https://jsd.yxlr.tk/npm/prismjs@1.1.0/prism.min.js
+    prismjs_lineNumber_js: https://jsd.yxlr.tk/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+    prismjs_autoloader: https://jsd.yxlr.tk/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
