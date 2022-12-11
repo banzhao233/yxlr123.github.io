@@ -19,7 +19,7 @@ cover: https://alist.yxlr.tk/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/6315e138164d
 ## 文章出错情况
 
 在本博客的"[自建jsdelivr反代服务](https://www.yxlr.tk/post/7db9c141.html)"一文中，自建代理地址写为**Tianli**
-搭建的服务[地址](cdn1.tianli0.top)，在此表示抱歉
+搭建的服务[地址](https://cdn1.tianli0.top)，在此表示抱歉
 
 现已改为正确的[https://jsd.yxlr.tk](https://jsd.yxlr.tk)
 
