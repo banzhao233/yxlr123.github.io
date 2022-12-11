@@ -13,7 +13,7 @@ title: 关于"jsd反代"文章出错的回应
 toc: true
 top_img: false
 updated: '2022-12-11 14:15:42'
-cover:
+cover: https://alist.yxlr.tk/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/6315e138164d8.webp?sign=UoI801k_5_IxTK6OZ4ouFAI5GTRDYV_vmcChVn48doU=:0
 ---
 
 ## 文章出错情况
